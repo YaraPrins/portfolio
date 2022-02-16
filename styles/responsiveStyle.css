@@ -1,0 +1,81 @@
+/*  
+    =========================================
+    =========================================
+    Portfolio Yara Prins
+    Versie 1
+    Student Communication & Multimedia Design
+    Hogeschool van Amsterdam
+    
+    Made by
+    © Yara Prins
+      02-09-2022
+    =========================================
+    =========================================
+*/
+
+
+/*   
+    ========================================================= 
+    =================== ALGEMENE STYLING ====================
+    =========================================================  
+*/
+
+@media (max-width: 1050px) {
+
+    .section1 div:nth-of-type(1) {
+        padding: 0;
+    }
+
+    .section1 div:nth-of-type(2) h1 {
+        font-size: 2rem;
+        max-width: 20rem;
+    }
+
+    .section1 div:nth-of-type(1) img:nth-of-type(1),
+    .section1 div:nth-of-type(1) img:nth-of-type(2) {
+        transition: all 200ms ease-in-out;
+    }
+    .section1 div:nth-of-type(1) img:nth-of-type(1) {
+        transform: scale(75%) rotate(20deg);
+        top: -0.5rem;
+        left: 9.5rem;
+    }
+
+    .section1 div:nth-of-type(1) img:nth-of-type(2) {
+        transform: scale(75%);
+    }
+    
+}
+
+@media (max-width: 750px) {
+
+    .section1 {
+        flex-direction: column;
+        justify-content: center;
+        padding: 0;
+    }
+
+    .section1 div:nth-of-type(1) {
+        padding: 0;
+    }
+
+    .section1 div:nth-of-type(2) h1 {
+        font-size: 2rem;
+        max-width: 20rem;
+    }
+
+    .section1 div:nth-of-type(1) img:nth-of-type(1),
+    .section1 div:nth-of-type(1) img:nth-of-type(2) {
+        transition: all 200ms ease-in-out;
+    }
+    .section1 div:nth-of-type(1) img:nth-of-type(1) {
+        transform: scale(60%) rotate(20deg);
+        top: -0.5rem;
+        left: 9.5rem;
+    }
+
+    .section1 div:nth-of-type(1) img:nth-of-type(2) {
+        transform: scale(60%);
+    }
+    
+}

@@ -1,0 +1,629 @@
+/*  
+    =========================================
+    =========================================
+    Portfolio Yara Prins
+    Versie 1
+    Student Communication & Multimedia Design
+    Hogeschool van Amsterdam
+    
+    Made by
+    © Yara Prins
+      02-09-2022
+    =========================================
+    =========================================
+*/
+
+
+/*   
+    ========================================================= 
+    =================== ALGEMENE STYLING ====================
+    =========================================================  
+*/
+
+@font-face {
+    font-family: "Agency FB";
+    font-style: normal;
+    font-weight: normal;
+    src: url(../assets/fonts/AGENCYR.TTF);
+    }
+@font-face {
+    font-family: "Agency FB Bold";
+    font-style: normal;
+    font-weight: bold;
+    src: url(../assets/fonts/AGENCYB.TTF);
+    }
+@font-face {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: normal;
+    src: url(../assets/fonts/Montserrat-Regular.ttf);
+}
+@font-face {
+    font-family: "Montserrat";
+    font-style: italic;
+    font-weight: normal;
+    src: url(../assets/fonts/Montserrat-Italic.ttf);
+}
+@font-face {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: bold;
+    src: url(../assets/fonts/Montserrat-Bold.ttf);
+}
+@font-face {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: lighter;
+    src: url(../assets/fonts/Montserrat-Light.ttf);
+}
+
+*, 
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-image: url(../assets/img/achtergrondBody.png);
+    background-size: contain;
+    background-repeat: repeat-y;
+}
+
+h1, h2, h3, li {
+    font-family: "Agency FB"
+}
+
+p {
+    font-family: "Montserrat";
+}
+
+body img.textureBoven {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 50;
+    max-width: 100%;
+}
+
+body div.backgroundTextureBoven {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 4rem;
+    background: rgb(255, 255, 255);
+    z-index: 50;
+}
+/*  
+    =============================================================================================== 
+    =========================================== HEADER ============================================
+    =============================================================================================== 
+*/
+
+header {
+    display: flex;
+    position: sticky;
+    top: 0;
+    justify-content: space-between;
+    z-index: 55;
+}
+
+header a.logoYP {
+    cursor: pointer;
+}
+
+header a.logoYP,
+header a.logoYP img {
+    margin: 0.4rem 1.5rem;
+}
+
+header a.logoYP:hover svg #Path_43 {
+    fill: rgb(255, 238, 238);
+}
+
+/* 
+    ====================================
+    =============== NAV ================
+    ====================================
+*/
+
+
+header nav ul {
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+}
+
+
+header nav ul li {
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    width: 10rem;
+}
+
+header nav ul li a {
+    width: 10rem;
+    text-underline-offset: 0.125rem;
+    text-decoration: none;
+    font-size: 1.4rem;
+    color: #000;
+    position: relative;
+    display: flex;
+    align-items: center;
+    overflow-y: hidden;
+}
+
+header nav ul li a svg,
+header nav ul li a span {
+    position: relative;
+    left: 0.5rem;
+}
+
+
+header nav ul li a span {
+    left: 1.3rem;
+    top: 0.05rem;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+    text-decoration-color: #C92F32;
+}
+
+.sectionActive {
+    text-decoration: underline;
+    text-decoration-color: #C92F32;
+}
+
+
+header nav ul li a svg:first-of-type {
+    position: absolute;
+    left: 0;
+    z-index: -1;
+    opacity: 0;
+}
+
+header nav ul li a svg:nth-of-type(2) {
+    opacity: 0;
+}
+
+
+
+/*   
+    =============================================================================================== 
+    ============================================ MAIN =============================================
+    ===============================================================================================  
+*/
+
+/* 
+    ====================================
+    ============ SECTION 1 =============
+    ====================================
+*/
+
+.section1 {
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 2em 0 1rem;
+    margin: 0;
+}
+
+.section1 div:nth-of-type(1) {
+    padding: 2rem 5rem;
+    position: relative;
+}
+
+.section1 div:nth-of-type(1) img:nth-of-type(1),
+.section1 div:nth-of-type(1) img:nth-of-type(2) {
+    transition: all 500ms ease;
+}
+
+
+.section1 div:first-of-type img.bigD20 {
+    position: absolute;
+    top: -0.5rem;
+    left: 18rem;
+    transform: rotate(20deg);
+    z-index: -1;
+}
+
+.section1 div:nth-of-type(2) {
+    margin-left: 3rem;
+}
+
+.section1 div:nth-of-type(2) h1 {
+    font-size: 3rem;
+    max-width: 30rem;
+}
+
+.section1 div:nth-of-type(2) h1 span {
+    color: #C92F32;
+}
+
+.section1 div:nth-of-type(2) a.bekijkWerk {
+    display: inline-block;
+    position: relative;
+    margin: 2rem 0 1rem;
+    padding: 1rem 0 0;
+    color: #fff;
+    text-decoration: none;
+    font-family: "Agency FB";
+    font-size: 2rem;
+}
+
+.section1 div:nth-of-type(2) a.bekijkWerk span {
+    position: relative;
+    top: -0.3rem;
+    left: 3.78rem;
+}
+
+.section1 div:nth-of-type(2) a.bekijkWerk svg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    max-width: 18rem;
+    z-index: -1;
+}
+
+.section1 div:nth-of-type(2) a.bekijkWerk:hover svg path {
+    fill: #992D2F;
+}
+
+
+.section1 div:nth-of-type(2) p,
+.section1 div:nth-of-type(2) p a {
+    font-family: "Agency FB";
+    color: #000;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    margin-left: 3rem;
+}
+
+.section1 div:nth-of-type(2) p a {
+    margin-left: 1rem;
+}
+
+.section1 div:nth-of-type(2) p a:hover {
+    color: #C92F32;
+}
+
+
+/* 
+    =========================================
+    ============ scrollVoorMeer =============
+    =========================================
+*/
+
+main div.scrollVoorMeer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+main div.scrollVoorMeer p {
+    margin-top: 0.5rem;
+    font-family: "Agency FB";
+    text-transform: uppercase;
+}
+
+
+@keyframes scrollVoorMeer {
+    0% {transform: translateY(0rem);}
+    20% {transform: translateY(0.2rem);}
+    40% {transform: translateY(0.4rem);}
+    60% {transform: translateY(0.6rem);}
+    80% {transform: translateY(0.4rem);}
+    100% {transform: translateY(0.0rem);}
+}
+
+main div.scrollVoorMeer svg {
+    animation: scrollVoorMeer 1.5s linear infinite;
+}
+
+/* 
+    ===========================================
+    ============ SECTION 2 / 3 / 4 ============
+    ===========================================
+*/
+
+.section2 div:nth-of-type(1) div,
+.section3 div.sectionMijnWerk,
+.section4 div.sectionContact {
+    margin: 1rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: -1rem;
+}
+
+.section2 div:nth-of-type(1) div h2,
+.section3 div:nth-of-type(1) h2 {
+    text-transform: uppercase;
+    font-weight: 400;
+    margin-left: 0.5rem;
+    font-size: 1.875rem;
+}
+
+/* 
+    ====================================
+    ============ SECTION 2 =============
+    ====================================
+*/
+.section2 {
+    margin-top: 8rem;
+}
+
+.section2 div:nth-of-type(1) {
+    margin-bottom: 5rem;
+}
+
+.section2 div:nth-of-type(1) p {
+    max-width: 45rem;
+    margin: 0 auto;
+}
+.section2 div:nth-of-type(1) p a {
+    color:#C92F32;
+    text-decoration: none;
+}
+.section2 div:nth-of-type(1) p a:hover {
+    color: #992D2F;
+}
+
+
+.section2 div:nth-of-type(2) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section2 div:nth-of-type(2) img {
+    width: 11.75rem;
+    height: 15.625rem;
+    object-fit: cover;
+
+    margin: 0 2rem;
+}
+
+
+/* 
+    ====================================
+    ============ SECTION 3 =============
+    ====================================
+*/
+
+.section3 {
+ max-width: 59rem;
+ margin: 8rem auto 0;
+}
+
+.section3 div:not(.sectionMijnWerk , .titelProject) {
+    margin: 2rem 0;
+}
+
+.section3 div p {
+    margin: 2rem 1rem;
+    column-count: auto;
+    column-width: 18rem;
+    column-gap: 6rem;
+}
+
+
+.section3 div div {
+    display: flex;
+}
+
+.section3 div div img {
+    width: 30rem;
+    object-fit: contain;
+}
+
+.section3 div div div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 0 2rem 3rem;
+}
+
+.section3 div div div h3 {
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+.section3 div div div p {
+    margin: 0;
+}
+
+
+
+
+
+/* 
+    ====================================
+    ============ SECTION 4 =============
+    ====================================
+*/
+
+
+/* 
+    ====================================
+                contact links
+    ====================================
+*/
+
+.section4 {
+    display: flex;
+    flex-direction: column;
+    margin-top: 6rem;
+}
+
+.section4 div:nth-of-type(2) {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.section4 div:nth-of-type(2) .contactLinks {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    max-width: 30rem;
+}
+
+.section4 div:nth-of-type(2) .contactLinks .contactText {
+    margin: 0 1rem;
+}
+
+.section4 div:nth-of-type(2) .contactLinks div.email_number {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.section4 div:nth-of-type(2) .contactLinks div.email_number div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.section4 div:nth-of-type(2) .contactLinks div.email_number div:nth-of-type(1) div.mail,
+.section4 div:nth-of-type(2) .contactLinks div.email_number div:nth-of-type(2) div.number {
+    display: flex;
+    margin: 1rem;
+}
+
+.section4 div:nth-of-type(2) .contactLinks div.email_number div:nth-of-type(1) div.mail img,
+.section4 div:nth-of-type(2) .contactLinks div.email_number div:nth-of-type(2) div.number img,
+.section4 div:nth-of-type(2) .contactLinks div.email_number div:nth-of-type(1) a,
+.section4 div:nth-of-type(2) .contactLinks div.email_number div:nth-of-type(2) a {
+    margin-right: 1rem;
+}
+
+.section4 div:nth-of-type(2) .contactLinks div.email_number div:nth-of-type(1) a,
+.section4 div:nth-of-type(2) .contactLinks div.email_number div:nth-of-type(2) a {
+    font-family: "Montserrat";
+    color:#C92F32;
+}
+
+.section4 div:nth-of-type(2) .contactLinks div.email_number div:nth-of-type(1) a:hover,
+.section4 div:nth-of-type(2) .contactLinks div.email_number div:nth-of-type(2) a:hover {
+    color: #000;
+    text-decoration: none;
+} 
+
+/* 
+    ====================================
+                contact rechts
+    ====================================
+*/
+
+.section4 .contactRechts form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-left: 5rem;
+}
+
+.section4 .contactRechts form fieldset {
+    display: flex;
+    flex-direction: column;
+    border: none;
+    margin-bottom: 1rem;
+}
+
+.section4 .contactRechts form fieldset label {
+    font-family: "Agency FB";
+    color: #C92F32;
+    font-size: 1.5rem;
+    margin-bottom: 0.2rem;
+}
+
+.section4 .contactRechts form fieldset input,
+.section4 .contactRechts form fieldset textarea {
+    width: 25rem;
+}
+.section4 .contactRechts form fieldset input {
+    height: 2rem;
+}
+
+.section4 .contactRechts form fieldset textarea {
+    resize: none;
+}
+
+.section4 .contactRechts form label.subtmitLabel {
+    position: relative;
+    cursor: pointer;
+}
+
+.section4 .contactRechts form label.subtmitLabel:hover svg path {
+    fill:#992D2F;
+}
+
+.section4 .contactRechts form input[type="submit"] {
+    position: absolute;
+    top: 0.5rem;
+    left: 1.6rem;
+    border: none;
+    background: none;
+    color: #fff;
+    cursor: pointer;
+    font-family: "Agency FB";
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+
+
+/*  
+    =============================================================================================== 
+    =========================================== FOOTER ============================================
+    =============================================================================================== 
+*/
+footer {
+    margin-top: 3rem;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 20rem;
+    z-index: -1;
+}
+
+
+.footerOverlay {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 12rem;
+    z-index: 0;
+    background-color: rgba(238, 238, 238, 0.575);
+}
+
+footer img.textureOnder {
+    position: absolute;
+    bottom: 0;
+    z-index: -1;
+    max-width: 100%;
+}
+/* 
+    ====================================
+    SOCIAL LINKS | LOGO | LINK TO GITHUB
+    ====================================
+*/
