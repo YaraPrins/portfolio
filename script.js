@@ -16,6 +16,20 @@ const svgDice_overMij = document.querySelector("body header nav ul li:nth-of-typ
 const svgDice_mijnWerk = document.querySelector("body header nav ul li:nth-of-type(3) a svg:nth-of-type(2)");
 const svgDice_contact = document.querySelector("body header nav ul li:nth-of-type(4) a svg:nth-of-type(2)");
 
+// ============================================
+// ============================================
+// ============================================
+// ============================================
+// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+//      verander mouseover|mouseleave in jS
+//      naar :hover opacity 1 in CSS
+// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+// ============================================
+// ============================================
+// ============================================
+// ============================================
+// ============================================
+
 
 const mediaQuery = window.matchMedia("(max-width: 800px)")
 
