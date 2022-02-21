@@ -123,7 +123,7 @@ header a.logoYP img {
 }
 
 header a.logoYP:hover svg #Path_43 {
-    fill: rgb(255, 238, 238);
+    fill: rgba(255, 80, 80, 0.116);
 }
 
 /* 
@@ -132,10 +132,13 @@ header a.logoYP:hover svg #Path_43 {
     ====================================
 */
 
+.mobNav-trigger {
+    display: none;
+}
+
 
 header nav ul {
     display: flex;
-    /* flex-direction: column; */
     align-items: center;
     justify-content: space-around;
     position: relative;
@@ -196,8 +199,6 @@ header nav ul li a svg:nth-of-type(2) {
     opacity: 0;
 }
 
-
-
 /*   
     =============================================================================================== 
     ============================================ MAIN =============================================
@@ -205,53 +206,80 @@ header nav ul li a svg:nth-of-type(2) {
 */
 
 /* 
-    ====================================
-    ============ SECTION 1 =============
-    ====================================
+    ============================================
+    ============ SECTION 1 | INTRO =============
+    ============================================
 */
 
 .section1 {
     position: relative;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
-    padding: 2em 0 1rem;
-    margin: 0;
+    margin: 2rem auto 5rem;
 }
 
-.section1 div:nth-of-type(1) {
-    padding: 2rem 5rem;
+/* 
+    ==================
+    Afb D20 | Afb Yara
+    ==================
+*/
+
+.section1 div.afbYara_d20 { 
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.section1 div:nth-of-type(1) img:nth-of-type(1),
-.section1 div:nth-of-type(1) img:nth-of-type(2) {
+.section1 div.afbYara_d20 img:nth-of-type(1),
+.section1 div.afbYara_d20 img:nth-of-type(2) {
     transition: all 500ms ease;
 }
 
+.section1 div.afbYara_d20 img.mainAfbYara {
+    max-width: 20rem;
+}
 
-.section1 div:first-of-type img.bigD20 {
+.section1 div.afbYara_d20 img.bigD20 {
     position: absolute;
-    top: -0.5rem;
-    left: 18rem;
+    top: -1rem;
+    left: 12rem;
     transform: rotate(20deg);
     z-index: -1;
+    max-width: 12rem;
 }
 
-.section1 div:nth-of-type(2) {
-    margin-left: 3rem;
-}
+/* 
+    ==================================
+    H1 Tekst | Button bekijk mijn werk
+    ==================================
+*/
 
-.section1 div:nth-of-type(2) h1 {
-    font-size: 3rem;
+.section1 div:nth-of-type(2) div {
+    margin: 1rem 0 0 10rem;
     max-width: 30rem;
 }
 
-.section1 div:nth-of-type(2) h1 span {
+.section1 div:nth-of-type(2) div h1 {
+    font-size: 3rem;
+}
+
+.section1 div:nth-of-type(2) div h1 span {
     color: #C92F32;
 }
 
-.section1 div:nth-of-type(2) a.bekijkWerk {
+/* 
+    =======================
+    Button bekijk mijn werk
+    =======================
+*/
+
+.section1 div:nth-of-type(2) div div.buttonMijnWerk_linkContact {
+    margin: 0;
+}
+
+.section1 div:nth-of-type(2) div div.buttonMijnWerk_linkContact a.bekijkWerk {
     display: inline-block;
     position: relative;
     margin: 2rem 0 1rem;
@@ -262,13 +290,13 @@ header nav ul li a svg:nth-of-type(2) {
     font-size: 2rem;
 }
 
-.section1 div:nth-of-type(2) a.bekijkWerk span {
+.section1 div:nth-of-type(2) div div.buttonMijnWerk_linkContact a.bekijkWerk span {
     position: relative;
     top: -0.3rem;
     left: 3.78rem;
 }
 
-.section1 div:nth-of-type(2) a.bekijkWerk svg {
+.section1 div:nth-of-type(2) div div.buttonMijnWerk_linkContact a.bekijkWerk svg {
     position: absolute;
     left: 0;
     top: 0;
@@ -276,13 +304,18 @@ header nav ul li a svg:nth-of-type(2) {
     z-index: -1;
 }
 
-.section1 div:nth-of-type(2) a.bekijkWerk:hover svg path {
+.section1 div:nth-of-type(2) div div.buttonMijnWerk_linkContact a.bekijkWerk:hover svg path {
     fill: #992D2F;
 }
 
+/* 
+    ====================
+    Link Neem contact op
+    ====================
+*/
 
-.section1 div:nth-of-type(2) p,
-.section1 div:nth-of-type(2) p a {
+.section1 div:nth-of-type(2) div div.buttonMijnWerk_linkContact p,
+.section1 div:nth-of-type(2) div div.buttonMijnWerk_linkContact p a {
     font-family: "Agency FB";
     color: #000;
     font-size: 1.5rem;
@@ -290,11 +323,11 @@ header nav ul li a svg:nth-of-type(2) {
     margin-left: 3rem;
 }
 
-.section1 div:nth-of-type(2) p a {
+.section1 div:nth-of-type(2) div div.buttonMijnWerk_linkContact p a {
     margin-left: 1rem;
 }
 
-.section1 div:nth-of-type(2) p a:hover {
+.section1 div:nth-of-type(2) div div.buttonMijnWerk_linkContact p a:hover {
     color: #C92F32;
 }
 
@@ -339,6 +372,12 @@ main div.scrollVoorMeer svg {
     ===========================================
 */
 
+/* 
+    =====================================
+    Kopjes Over Mij | Mijn Werk | Contact
+    =====================================
+*/
+
 .section2 div:nth-of-type(1) div,
 .section3 div.sectionMijnWerk,
 .section4 div.sectionContact {
@@ -359,13 +398,19 @@ main div.scrollVoorMeer svg {
 }
 
 /* 
-    ====================================
-    ============ SECTION 2 =============
-    ====================================
+    ===============================================
+    ============ SECTION 2 | OVER MIJ =============
+    ===============================================
 */
 .section2 {
     margin-top: 8rem;
 }
+
+/* 
+    =======================
+        Over Mij Tekst
+    =======================
+*/
 
 .section2 div:nth-of-type(1) {
     margin-bottom: 5rem;
@@ -383,6 +428,11 @@ main div.scrollVoorMeer svg {
     color: #992D2F;
 }
 
+/* 
+    =======================
+        Afb Over Mij
+    =======================
+*/
 
 .section2 div:nth-of-type(2) {
     display: flex;
@@ -394,15 +444,14 @@ main div.scrollVoorMeer svg {
     width: 11.75rem;
     height: 15.625rem;
     object-fit: cover;
-
     margin: 0 2rem;
 }
 
 
 /* 
-    ====================================
-    ============ SECTION 3 =============
-    ====================================
+    ================================================
+    ============ SECTION 3 | MIJN WERK =============
+    ================================================
 */
 
 .section3 {
@@ -413,6 +462,11 @@ main div.scrollVoorMeer svg {
 .section3 div:not(.sectionMijnWerk , .titelProject) {
     margin: 2rem 0;
 }
+/* 
+    ======================
+        Tekst Project
+    ======================
+*/
 
 .section3 div p {
     margin: 2rem 1rem;
@@ -421,21 +475,33 @@ main div.scrollVoorMeer svg {
     column-gap: 6rem;
 }
 
+/* 
+    =================================
+    DIV Afb , Titel, Subtitel Project
+    =================================
+*/
 
 .section3 div div {
     display: flex;
 }
+
 
 .section3 div div img {
     width: 30rem;
     object-fit: contain;
 }
 
+/* 
+    =======================
+        Titel , Subtitel
+    =======================
+*/
+
 .section3 div div div {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: 0 0 2rem 3rem;
+    margin: 0 auto;
 }
 
 .section3 div div div h3 {
@@ -448,26 +514,16 @@ main div.scrollVoorMeer svg {
 }
 
 
-
-
-
 /* 
-    ====================================
-    ============ SECTION 4 =============
-    ====================================
-*/
-
-
-/* 
-    ====================================
-                contact links
-    ====================================
+    ==============================================
+    ============ SECTION 4 | CONTACT =============
+    ==============================================
 */
 
 .section4 {
     display: flex;
     flex-direction: column;
-    margin-top: 6rem;
+    margin: 6rem auto 0;
 }
 
 .section4 div:nth-of-type(2) {
@@ -475,6 +531,12 @@ main div.scrollVoorMeer svg {
     justify-content: center;
     align-items: flex-start;
 }
+
+/* 
+    ==============================
+            contact links
+    ==============================
+*/
 
 .section4 div:nth-of-type(2) .contactLinks {
     display: flex;
@@ -529,9 +591,9 @@ main div.scrollVoorMeer svg {
 } 
 
 /* 
-    ====================================
-                contact rechts
-    ====================================
+    ==============================
+            contact rechts
+    ==============================
 */
 
 .section4 .contactRechts form {
@@ -622,6 +684,7 @@ footer img.textureOnder {
     z-index: -1;
     max-width: 100%;
 }
+
 /* 
     ====================================
     SOCIAL LINKS | LOGO | LINK TO GITHUB

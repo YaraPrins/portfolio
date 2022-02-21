@@ -16,66 +16,499 @@
 
 /*   
     ========================================================= 
-    =================== ALGEMENE STYLING ====================
+    =================== MAX WIDTH 1150PX ====================
     =========================================================  
 */
 
-@media (max-width: 1050px) {
-
-    .section1 div:nth-of-type(1) {
-        padding: 0;
-    }
-
-    .section1 div:nth-of-type(2) h1 {
-        font-size: 2rem;
-        max-width: 20rem;
-    }
-
-    .section1 div:nth-of-type(1) img:nth-of-type(1),
-    .section1 div:nth-of-type(1) img:nth-of-type(2) {
-        transition: all 200ms ease-in-out;
-    }
-    .section1 div:nth-of-type(1) img:nth-of-type(1) {
-        transform: scale(75%) rotate(20deg);
-        top: -0.5rem;
-        left: 9.5rem;
-    }
-
-    .section1 div:nth-of-type(1) img:nth-of-type(2) {
-        transform: scale(75%);
-    }
-    
-}
-
-@media (max-width: 750px) {
+@media (max-width: 1150px) {
 
     .section1 {
+        margin: 2rem auto 3rem;
+    }
+
+    .section1 div.afbYara_d20 img:nth-of-type(1),
+    .section1 div.afbYara_d20 img:nth-of-type(2) {
+        transition: all 200ms ease-in-out;
+    }
+
+    .section1 div.afbYara_d20 img:nth-of-type(1) {
+        transform: scale(70%) rotate(20deg);
+        top: -0.5rem;
+        left: 10.5rem;
+    }
+
+    .section1 div.afbYara_d20 img:nth-of-type(2) {
+        transform: scale(75%);
+    }
+
+    .section1 div:nth-of-type(2) div {
+        margin: 1rem 0 0 5rem;
+        max-width: 30rem;
+    }
+    
+    .section1 div:nth-of-type(2) div h1 {
+        font-size: 2.5rem;
+    }
+    
+    .section1 div:nth-of-type(2) div div.buttonMijnWerk_linkContact a.bekijkWerk {
+        font-size: 1.5rem;
+    }
+    
+    .section1 div:nth-of-type(2) div div.buttonMijnWerk_linkContact a.bekijkWerk span {
+        top: -0.1rem;
+        left: 2.78rem;
+    }
+    
+    .section1 div:nth-of-type(2) div div.buttonMijnWerk_linkContact a.bekijkWerk svg {
+        max-width: 13rem;
+    }
+    
+    .section1 div:nth-of-type(2) div div.buttonMijnWerk_linkContact p,
+    .section1 div:nth-of-type(2) div div.buttonMijnWerk_linkContact p a {
+        font-size: 1.2rem;
+    }
+}
+
+/*   
+    ========================================================= 
+    =================== MAX WIDTH 1010PX ====================
+    =========================================================  
+*/
+
+
+@media (max-width: 1010px) {
+    
+    div.scrollVoorMeer {
+        margin-top: 3rem;
+    }
+
+    .section2 {
+        max-width: 35rem;
+        margin: 8rem auto;
+    }
+
+    .section2 div:nth-of-type(2) {
+        display: grid;
+        grid-template-columns: 11.75rem 11.75rem;
+        grid-template-rows: 15.625rem 15.625rem;
+        gap: 3rem;
+        align-items: center;
+        justify-items: center;
+    }
+
+    .section3 {
+        max-width: 35rem;
+    }
+
+    .section3 div div {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .section3 div div img {
+        max-width: 33rem;
+        object-fit: contain;
+        margin-bottom: 3rem;
+    }
+
+    .section4 {
+        max-width: 40rem;
+    }
+
+    .section4 div:nth-of-type(2) {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .section4 .contactRechts form {
+        margin: 3rem 0;
+    }
+
+    .section4 .contactRechts form fieldset input,
+    .section4 .contactRechts form fieldset textarea {
+        max-width: 25rem;
+    }
+
+}
+
+/*   
+    ========================================================= 
+    =================== MAX WIDTH 800PX ====================
+    =========================================================  
+*/
+
+@media (max-width: 800px) {
+
+    /* header {
+        display: none;
+    } */
+    
+    .mobNav-trigger {
+        display: block;
+        background: url();
+    }
+
+    nav {
+        position: fixed;
+        right: 0;
+        width: 15rem;
+        background-color: #ffffffe7;
+        backdrop-filter: blur(1rem);
+        height: 100vh;  
+    }
+    
+    .navMob {
+        margin-top: 5rem;
+        display: flex;
         flex-direction: column;
         justify-content: center;
-        padding: 0;
+        gap: 1rem; 
     }
 
-    .section1 div:nth-of-type(1) {
-        padding: 0;
+    .navMob li {
+
+        display: flex;
+        justify-content: center;
     }
 
-    .section1 div:nth-of-type(2) h1 {
-        font-size: 2rem;
+    header nav ul li a svg:nth-of-type(2) {
+        opacity: 1;
+    }
+
+    p {
+        font-size: 0.85rem;
+    }
+    
+    .section1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 0;
+    }
+
+    .section1 div.afbYara_d20 {
+        margin-top: 4rem;
+        height: 18rem;
+    }
+
+
+    .section1 div.afbYara_d20 img.bigD20 {
+        top: -1.9rem;
+    }
+
+    .section1 div:nth-of-type(2) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 25rem;
+    }
+
+    .section1 div:nth-of-type(2) div {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin: 1rem 0 0 2rem;
         max-width: 20rem;
     }
 
-    .section1 div:nth-of-type(1) img:nth-of-type(1),
-    .section1 div:nth-of-type(1) img:nth-of-type(2) {
-        transition: all 200ms ease-in-out;
+    .section1 div:nth-of-type(2) div h1 {
+        font-size: 2rem;
     }
-    .section1 div:nth-of-type(1) img:nth-of-type(1) {
+
+    .section1 div:nth-of-type(2) div div.buttonMijnWerk_linkContact {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .section1 div:nth-of-type(2) div div.buttonMijnWerk_linkContact a.bekijkWerk {
+        font-size: 1.5rem;
+    }
+    
+    .section1 div:nth-of-type(2) div div.buttonMijnWerk_linkContact a.bekijkWerk span {
+        top: -0.1rem;
+        left: 2.78rem;
+    }
+    
+    .section1 div:nth-of-type(2) div div.buttonMijnWerk_linkContact a.bekijkWerk svg {
+        max-width: 13rem;
+    }
+    
+    .section1 div:nth-of-type(2) div div.buttonMijnWerk_linkContact p,
+    .section1 div:nth-of-type(2) div div.buttonMijnWerk_linkContact p a {
+        font-size: 1.2rem;
+    }
+
+    .section2 {
+        max-width: 30rem;
+    }
+
+    .section2 div:nth-of-type(1) p {
+        margin: 0 2rem;
+    }
+
+    .section3 {
+        max-width: 30rem;
+    }
+
+    .section3 div div img {
+        max-width: 28rem;
+        object-fit: contain;
+        margin-bottom: 3rem;
+    }
+
+    .section4 {
+        max-width: 30rem;
+    }
+
+    .section4 div:nth-of-type(2) .contactLinks div.email_number div {
+        display: flex;
+        flex-direction: column;
+    }
+    .section4 div:nth-of-type(2) .contactLinks div.email_number div div:first-of-type {
+        flex-direction: row;
+    }
+
+    .section4 .contactRechts form fieldset input,
+    .section4 .contactRechts form fieldset textarea {
+        max-width: 25rem;
+    }
+
+}
+
+
+/*   
+    ========================================================= 
+    =================== MAX WIDTH 500PX =====================
+    =========================================================  
+*/
+
+@media (max-width: 500px) {
+
+    .section1 {
+        margin: 0 auto;
+    }
+
+    .section1 div.afbYara_d20 img:nth-of-type(1) {
         transform: scale(60%) rotate(20deg);
-        top: -0.5rem;
-        left: 9.5rem;
+        top: -1.3rem;
+        left: 9rem;
+    }
+    
+
+    .section1 div.afbYara_d20 img:nth-of-type(2) {
+        transform: scale(60%);
+    }
+
+    .section1 div:nth-of-type(2) div {
+        margin: 0 auto;
+        max-width: 20rem;
+        margin: 1rem 0 0 2rem;
+    }
+    
+    .section1 div:nth-of-type(2) div h1 {
+        font-size: 1.9rem;
+    }
+    
+    .section1 div:nth-of-type(2) div div.buttonMijnWerk_linkContact a.bekijkWerk {
+        font-size: 1.5rem;
+    }
+    
+    .section1 div:nth-of-type(2) div div.buttonMijnWerk_linkContact a.bekijkWerk span {
+        top: -0.1rem;
+        left: 2.78rem;
+    }
+    
+    .section1 div:nth-of-type(2) div div.buttonMijnWerk_linkContact a.bekijkWerk svg {
+        max-width: 13rem;
+    }
+    
+    .section1 div:nth-of-type(2) div div.buttonMijnWerk_linkContact p,
+    .section1 div:nth-of-type(2) div div.buttonMijnWerk_linkContact p a {
+        font-size: 1.2rem;
+    }
+
+    .section2 {
+        max-width: 20rem;
+    }
+
+    .section2 div:nth-of-type(1) p {
+        margin: 0 1rem;
+    }
+
+    .section2 div:nth-of-type(2) {
+        display: grid;
+        grid-template-columns: 11.75rem;
+        grid-template-rows: 15.625rem 15.625rem 15.625rem 15.625rem;
+        gap: 3rem;
+        align-items: center;
+        justify-items: center;
+    }
+
+    .section3 {
+        max-width: 20rem;
+    }
+
+    .section3 div div img {
+        max-width: 20rem;
+        object-fit: contain;
+        margin-bottom: 3rem;
+    }
+    .section3 div div p {
+        max-width: 20rem;
+    }
+
+    .section4 {
+        max-width: 20rem;
+    }
+
+    .section4 .contactRechts form fieldset input,
+    .section4 .contactRechts form fieldset textarea {
+        max-width: 20rem;
+    }
+
+    .section4 .contactRechts form fieldset input {
+        max-height: 1.5rem
+    }
+
+    .section4 .contactRechts form fieldset textarea {
+        max-height: 9rem;
+    }
+
+}
+
+
+/*   
+    ========================================================= 
+    =================== MAX WIDTH 340PX =====================
+    =========================================================  
+*/
+
+@media (max-width: 340px) {
+
+    .section1 {
+        max-width: 15rem;
+    }
+
+    .section1 div:nth-of-type(1) {
+        max-width: 15rem;
+        height: 12rem;
+    }
+
+    .section1 div:nth-of-type(1) img:nth-of-type(1) {
+        transform: scale(50%) rotate(20deg);
+        top: -3.6rem;
+        left: 5.5rem;
     }
 
     .section1 div:nth-of-type(1) img:nth-of-type(2) {
-        transform: scale(60%);
+        transform: scale(50%);
     }
     
+    .section1 div:nth-of-type(2) div {
+        margin: 1rem 0 0 1rem;
+    }
+
+    .section1 div:nth-of-type(2) div h1 {
+        font-size: 1.5rem;
+        max-width: 15rem;
+    }
+
+    .section1 div:nth-of-type(2) div div.buttonMijnWerk_linkContact {
+        align-items: flex-start;
+        margin: 1rem 0 0 1.5rem;
+    }
+
+    .section1 div:nth-of-type(2) div div.buttonMijnWerk_linkContact a.bekijkWerk {
+        font-size: 1.3rem;
+        margin: 0 0 1rem 0;
+    }
+    
+    .section1 div:nth-of-type(2) div div.buttonMijnWerk_linkContact a.bekijkWerk span {
+        top: 0;
+        left: 2.3rem;
+    }
+    
+    .section1 div:nth-of-type(2) div div.buttonMijnWerk_linkContact a.bekijkWerk svg {
+        max-width: 11rem;
+    }
+    .section1 div:nth-of-type(2) div div.buttonMijnWerk_linkContact p {
+        margin: 0;
+    }
+    
+    .section1 div:nth-of-type(2) div div.buttonMijnWerk_linkContact p,
+    .section1 div:nth-of-type(2) div div.buttonMijnWerk_linkContact p a {
+        font-size: 1rem;
+    }
+
+    .section2 div:nth-of-type(1) div h2,
+    .section3 div:nth-of-type(1) h2 {
+        font-size: 1.3rem;
+    }
+
+    .section2 {
+        max-width: 15rem;
+    }
+
+    .section3 {
+        max-width: 15rem;
+    }
+
+    .section3 div div img {
+        width: 15rem;
+    }
+
+    .section3 div div p {
+        max-width: 15rem;
+    }
+
+    .section3 div div div p {
+        margin: 0 1rem;
+    }
+
+    .section4 {
+        max-width: 15rem;
+    }
+
+    .section4 .contactRechts form fieldset input,
+    .section4 .contactRechts form fieldset textarea {
+        width: 15rem;
+    }
+
+}
+
+@media (max-width: 280px) {
+
+    .section1 div:nth-of-type(2) h1 {
+        font-size: 1.5rem;
+        max-width: 10rem;
+    }
+
+    .section1 div:nth-of-type(1) img:nth-of-type(1) {
+        transform: scale(40%) rotate(20deg);
+        top: -3.2rem;
+        left: 4.8rem;
+    }
+
+    .section1 div:nth-of-type(1) img:nth-of-type(2) {
+        transform: scale(40%);
+        left: 0;
+    }
+
+    .section1 {
+        max-width: 10rem;
+    }
+
+    .section4 {
+        max-width: 10rem;
+    }
+
+    .section4 .contactRechts form fieldset input,
+    .section4 .contactRechts form fieldset textarea {
+        width: 10rem;
+    }
+
 }
