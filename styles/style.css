@@ -73,6 +73,7 @@ body {
     background-image: url(../assets/img/achtergrondBody.png);
     background-size: contain;
     background-repeat: repeat-y;
+    overflow-x: hidden;
 }
 
 h1, h2, h3, li {
@@ -195,8 +196,16 @@ header nav ul li a svg:first-of-type {
     opacity: 0;
 }
 
+header nav ul li:hover a svg:first-of-type {
+    opacity: 1;
+}
+
 header nav ul li a svg:nth-of-type(2) {
     opacity: 0;
+}
+
+header nav ul li:hover a svg:nth-of-type(2) {
+    opacity: 1;
 }
 
 /*   

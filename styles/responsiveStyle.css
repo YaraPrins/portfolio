@@ -145,19 +145,49 @@
     
     .mobNav-trigger {
         display: block;
-        background: url();
+        position: absolute;
+        top: 1.5rem;
+        right: 1.5rem;
+        z-index: 9999;
+        width: 1.5rem;
+        border: none;
+        aspect-ratio: 1;
+        background: url(../assets/other/icon-hamburger.svg);
+        background-repeat: no-repeat;
+        cursor: pointer;
+    }
+
+    .mobNav-trigger-open {
+        background: url(../assets/other/icon-close.svg);
+        background-repeat: no-repeat;
     }
 
     nav {
         position: fixed;
         right: 0;
         width: 15rem;
-        background-color: #ffffffe7;
-        backdrop-filter: blur(1rem);
-        height: 100vh;  
+        background-color: #f5f5f5f8;
+        height: 100vh;
+        z-index: 1000;
+        transition: all 200ms ease;
+        transform: translateX(100%);
     }
-    
-    .navMob {
+
+    nav.mobClosed {
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+    /* ul {
+        display: flex;
+        margin-top: 5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 1rem;
+    } */
+
+    ul.navMob {
         margin-top: 5rem;
         display: flex;
         flex-direction: column;
@@ -166,13 +196,50 @@
     }
 
     .navMob li {
-
         display: flex;
         justify-content: center;
     }
 
+    header nav ul li a svg:first-of-type {
+        position: absolute;
+        left: 0;
+        z-index: -1;
+        opacity: 0;
+    }
+    
+    header nav ul li:hover a svg:first-of-type {
+        opacity: 0;
+    }
+    
     header nav ul li a svg:nth-of-type(2) {
         opacity: 1;
+    }
+    
+    header nav ul li:hover a svg:nth-of-type(2) {
+        opacity: 1;
+    }
+
+    @supports (backdrop-filter: blur(1rem)) {
+        nav {
+            background-color: #ffffff67;
+            backdrop-filter: blur(1rem);
+        }
+
+        header nav ul li a svg:first-of-type {
+            opacity: 1;
+        }
+        
+        header nav ul li:hover a svg:first-of-type {
+            opacity: 1;
+        }
+        
+        header nav ul li a svg:nth-of-type(2) {
+            opacity: 1;
+        }
+        
+        header nav ul li:hover a svg:nth-of-type(2) {
+            opacity: 1;
+        }
     }
 
     p {
