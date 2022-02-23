@@ -27,7 +27,7 @@
     <title>Portfolio Versie 0 (7 feb 2022)</title>
 </head>
 
-<body id="jumpToHome">
+<body>
     <div class="backgroundTextureBoven"></div>
     <img src="./assets/img/HeaderTexture.png" alt="textuur pagina bovenkant" class="textureBoven">
     <header>
@@ -79,7 +79,7 @@
         <button class="mobNav-trigger" aria-controls="primary-nav"></button>
         <nav id="primary-nav">
             <ul class="navMob">
-                <li><a href="#jumpToHome"><svg xmlns="http://www.w3.org/2000/svg" width="154.043" height="51.193"
+                <li data-nav="home"><a href="#home"><svg xmlns="http://www.w3.org/2000/svg" width="154.043" height="51.193"
                             viewBox="0 0 154.043 51.193">
                             <path id="Path_83" data-name="Path 83"
                                 d="M15.456,0H138.587l15.456,25.6-15.456,25.6H15.456L0,25.6Z" fill="#fff" />
@@ -92,7 +92,7 @@
                                 stroke-width="1" />
                         </svg><span>Home</span></a></li>
 
-                <li><a href="#jumpToOverMij"><svg xmlns="http://www.w3.org/2000/svg" width="154.043" height="51.193"
+                <li data-nav="overMij"><a href="#overMij"><svg xmlns="http://www.w3.org/2000/svg" width="154.043" height="51.193"
                             viewBox="0 0 154.043 51.193">
                             <path id="Path_83" data-name="Path 83"
                                 d="M15.456,0H138.587l15.456,25.6-15.456,25.6H15.456L0,25.6Z" fill="#fff" />
@@ -106,7 +106,7 @@
                                 stroke-width="1" />
                         </svg><span>Over Mij</span></a></li>
 
-                <li><a href="#jumpToMijnWerk"><svg xmlns="http://www.w3.org/2000/svg" width="154.043" height="51.193"
+                <li data-nav="mijnWerk"><a href="#mijnWerk"><svg xmlns="http://www.w3.org/2000/svg" width="154.043" height="51.193"
                             viewBox="0 0 154.043 51.193">
                             <path id="Path_83" data-name="Path 83"
                                 d="M15.456,0H138.587l15.456,25.6-15.456,25.6H15.456L0,25.6Z" fill="#fff" />
@@ -120,7 +120,7 @@
                                 stroke-width="1" />
                         </svg><span>Mijn Werk</span></a></li>
 
-                <li><a href="#jumpToContact"><svg xmlns="http://www.w3.org/2000/svg" width="154.043" height="51.193"
+                <li data-nav="contact"><a href="#contact"><svg xmlns="http://www.w3.org/2000/svg" width="154.043" height="51.193"
                             viewBox="0 0 154.043 51.193">
                             <path id="Path_83" data-name="Path 83"
                                 d="M15.456,0H138.587l15.456,25.6-15.456,25.6H15.456L0,25.6Z" fill="#fff" />
@@ -184,7 +184,7 @@
         </div>
 
         <!-- ================================================  SECTION 2  ================================================ -->
-        <section class="section2" id="jumpToOverMij">
+        <section class="section2" id="overMij">
             <div>
                 <div class="sectionOverMij">
                     <img src="./assets/other/d20GreySmall_currentSection.svg" alt="Dice Over Mij">
@@ -237,7 +237,7 @@
         </section>
 
         <!-- ================================================  SECTION 3  ================================================ -->
-        <section class="section3" id="jumpToMijnWerk">
+        <section class="section3" id="mijnWerk">
             <div class="sectionMijnWerk" id="jumpToMijnWerkToo">
                 <img src="./assets/other/d20GreySmall_currentSection.svg" alt="Dice Mijn Werk">
                 <h2>Mijn Werk</h2>
@@ -362,7 +362,7 @@
         </section>
 
         <!-- ================================================  SECTION 4  ================================================ -->
-        <section class="section4" id="jumpToContact">
+        <section class="section4" id="contact">
             <div class="sectionContact">
                 <img src="./assets/other/d20GreySmall_currentSection.svg" alt="Dice Contact">
                 <h2>Contact</h2>
