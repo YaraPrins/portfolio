@@ -572,6 +572,36 @@ main div.scrollVoorMeer svg {
     margin: 0;
 }
 
+/* 
+    ========================
+        Meer Afb Project
+    ========================
+*/
+
+.section3 .container-meerAfb-img {
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+    grid-template-rows: 200px 200px;
+    place-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.section3 img.meerAfb-img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    object-position: top;
+    margin: 0 0.5rem;
+    cursor: pointer;
+    transform: scale(1);
+    transition: transform 50ms ease;
+}
+
+.section3 img.meerAfb-img:hover {
+    transform: scale(1.1);
+}
+
 
 /* 
     ==============================================
