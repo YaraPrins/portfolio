@@ -578,15 +578,6 @@ main div.scrollVoorMeer svg {
     ========================
 */
 
-.section3 .container-meerAfb-img {
-    display: grid;
-    grid-template-columns: 200px 200px 200px;
-    grid-template-rows: 200px 200px;
-    place-items: center;
-    justify-content: center;
-    gap: 1rem;
-}
-
 .section3 img.meerAfb-img {
     width: 150px;
     height: 150px;
@@ -600,6 +591,40 @@ main div.scrollVoorMeer svg {
 
 .section3 img.meerAfb-img:hover {
     transform: scale(1.1);
+}
+
+
+.section3 div:nth-of-type(2) div:nth-of-type(3),
+.section3 div:nth-of-type(3) div:nth-of-type(3),
+.section3 div:nth-of-type(4) div:nth-of-type(3),
+.section3 div:nth-of-type(5) div:nth-of-type(3),
+.section3 div:nth-of-type(6) div:nth-of-type(3),
+.section3 div:nth-of-type(7) div:nth-of-type(3) {
+    display: none;
+}
+
+.section3 div:nth-of-type(2) div:nth-of-type(3) div,
+.section3 div:nth-of-type(3) div:nth-of-type(3) div,
+.section3 div:nth-of-type(4) div:nth-of-type(3) div,
+.section3 div:nth-of-type(5) div:nth-of-type(3) div,
+.section3 div:nth-of-type(6) div:nth-of-type(3) div,
+.section3 div:nth-of-type(7) div:nth-of-type(3) div {
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+    grid-template-rows: 200px 200px;
+    place-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+
+.meerAfb-fed,
+.meerAfb-hci,
+.meerAfb-pt2,
+.meerAfb-vid,
+.meerAfb-pt1,
+.meerAfb-vrm2 {
+    display: block;
 }
 
 
