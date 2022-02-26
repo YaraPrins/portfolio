@@ -111,7 +111,12 @@
         margin-bottom: 3rem;
     }
 
-    .section3 .container-meerAfb-img {
+    .section3 div:nth-of-type(2) div:nth-of-type(3) div,
+    .section3 div:nth-of-type(3) div:nth-of-type(3) div,
+    .section3 div:nth-of-type(4) div:nth-of-type(3) div,
+    .section3 div:nth-of-type(5) div:nth-of-type(3) div,
+    .section3 div:nth-of-type(6) div:nth-of-type(3) div,
+    .section3 div:nth-of-type(7) div:nth-of-type(3) div {
         grid-template-columns: 180px 180px 180px;
         grid-template-rows: 180px 180px;
         gap: 0.5rem;
@@ -324,7 +329,12 @@
         margin-bottom: 3rem;
     }
 
-    .section3 .container-meerAfb-img {
+    .section3 div:nth-of-type(2) div:nth-of-type(3) div,
+    .section3 div:nth-of-type(3) div:nth-of-type(3) div,
+    .section3 div:nth-of-type(4) div:nth-of-type(3) div,
+    .section3 div:nth-of-type(5) div:nth-of-type(3) div,
+    .section3 div:nth-of-type(6) div:nth-of-type(3) div,
+    .section3 div:nth-of-type(7) div:nth-of-type(3) div {
         grid-template-columns: 180px 180px;
         grid-template-rows: 180px 180px 180px;
         gap: 0.5rem;
@@ -435,7 +445,12 @@
         max-width: 20rem;
     }
 
-    .section3 .container-meerAfb-img {
+    .section3 div:nth-of-type(2) div:nth-of-type(3) div,
+    .section3 div:nth-of-type(3) div:nth-of-type(3) div,
+    .section3 div:nth-of-type(4) div:nth-of-type(3) div,
+    .section3 div:nth-of-type(5) div:nth-of-type(3) div,
+    .section3 div:nth-of-type(6) div:nth-of-type(3) div,
+    .section3 div:nth-of-type(7) div:nth-of-type(3) div  {
         grid-template-columns: 180px;
         grid-template-rows: 180px 180px 180px 180px;
         gap: 1rem;

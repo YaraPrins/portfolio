@@ -55,7 +55,7 @@ sections.forEach(section => {
 /*  
     ================================
     ================================
-            BUTTON MEER AFB
+            MEER AFB BUTTON
     ================================
     ================================
 */
@@ -67,8 +67,6 @@ const buttonMeerAfbVID = document.querySelector(".buttonMeerAfb-vid");
 const buttonMeerAfbPT1 = document.querySelector(".buttonMeerAfb-pt1");
 const buttonMeerAfbVRM2 = document.querySelector(".buttonMeerAfb-vrm2");
 
-
-
 const imgGalleryFED = document.querySelector(".section3 div:nth-of-type(2) div:nth-of-type(3)");
 const imgGalleryHCI = document.querySelector(".section3 div:nth-of-type(3) div:nth-of-type(3)");
 const imgGalleryPT2 = document.querySelector(".section3 div:nth-of-type(4) div:nth-of-type(3)");
@@ -76,27 +74,51 @@ const imgGalleryVID = document.querySelector(".section3 div:nth-of-type(5) div:n
 const imgGalleryPT1 = document.querySelector(".section3 div:nth-of-type(6) div:nth-of-type(3)");
 const imgGalleryVRM2 = document.querySelector(".section3 div:nth-of-type(7) div:nth-of-type(3)");
 
-
 buttonMeerAfbFED.addEventListener("click", () => {
-    imgGalleryFED.classList.toggle(".meerAfb-fed");
+    if (imgGalleryFED.style.display === "none") {
+        imgGalleryFED.style.display = "block";
+    } else {
+        imgGalleryFED.style.display = "none";
+    }
 });
 
+
 buttonMeerAfbHCI.addEventListener("click", () => {
-    imgGalleryHCI.classList.toggle(".meerAfb-hci");
+    if (imgGalleryHCI.style.display === "none") {
+        imgGalleryHCI.style.display = "block";
+    } else {
+        imgGalleryHCI.style.display = "none";
+    }
 });
 
 buttonMeerAfbPT2.addEventListener("click", () => {
-    imgGalleryPT2.classList.toggle(".meerAfb-pt2");
+    if (imgGalleryPT2.style.display === "none") {
+        imgGalleryPT2.style.display = "block";
+    } else {
+        imgGalleryPT2.style.display = "none";
+    }
 });
 
 buttonMeerAfbVID.addEventListener("click", () => {
-    imgGalleryVID.classList.toggle(".meerAfb-vid");
+    if (imgGalleryVID.style.display === "none") {
+        imgGalleryVID.style.display = "block";
+    } else {
+        imgGalleryVID.style.display = "none";
+    }
 });
 
 buttonMeerAfbPT1.addEventListener("click", () => {
-    imgGalleryPT1.classList.toggle(".meerAfb-pt1");
+    if (imgGalleryPT1.style.display === "none") {
+        imgGalleryPT1.style.display = "block";
+    } else {
+        imgGalleryPT1.style.display = "none";
+    }
 });
 
 buttonMeerAfbVRM2.addEventListener("click", () => {
-    imgGalleryVRM2.classList.toggle(".meerAfb-vrm2");
+    if (imgGalleryVRM2.style.display === "none") {
+        imgGalleryVRM2.style.display = "block";
+    } else {
+        imgGalleryVRM2.style.display = "none";
+    }
 });

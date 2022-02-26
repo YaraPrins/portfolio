@@ -593,16 +593,6 @@ main div.scrollVoorMeer svg {
     transform: scale(1.1);
 }
 
-
-.section3 div:nth-of-type(2) div:nth-of-type(3),
-.section3 div:nth-of-type(3) div:nth-of-type(3),
-.section3 div:nth-of-type(4) div:nth-of-type(3),
-.section3 div:nth-of-type(5) div:nth-of-type(3),
-.section3 div:nth-of-type(6) div:nth-of-type(3),
-.section3 div:nth-of-type(7) div:nth-of-type(3) {
-    display: none;
-}
-
 .section3 div:nth-of-type(2) div:nth-of-type(3) div,
 .section3 div:nth-of-type(3) div:nth-of-type(3) div,
 .section3 div:nth-of-type(4) div:nth-of-type(3) div,
@@ -617,15 +607,6 @@ main div.scrollVoorMeer svg {
     gap: 1rem;
 }
 
-
-.meerAfb-fed,
-.meerAfb-hci,
-.meerAfb-pt2,
-.meerAfb-vid,
-.meerAfb-pt1,
-.meerAfb-vrm2 {
-    display: block;
-}
 
 
 /* 
