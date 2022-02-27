@@ -67,12 +67,12 @@ const buttonMeerAfbVID = document.querySelector(".buttonMeerAfb-vid");
 const buttonMeerAfbPT1 = document.querySelector(".buttonMeerAfb-pt1");
 const buttonMeerAfbVRM2 = document.querySelector(".buttonMeerAfb-vrm2");
 
-const imgGalleryFED = document.querySelector(".section3 div:nth-of-type(2) div:nth-of-type(3)");
-const imgGalleryHCI = document.querySelector(".section3 div:nth-of-type(3) div:nth-of-type(3)");
-const imgGalleryPT2 = document.querySelector(".section3 div:nth-of-type(4) div:nth-of-type(3)");
-const imgGalleryVID = document.querySelector(".section3 div:nth-of-type(5) div:nth-of-type(3)");
-const imgGalleryPT1 = document.querySelector(".section3 div:nth-of-type(6) div:nth-of-type(3)");
-const imgGalleryVRM2 = document.querySelector(".section3 div:nth-of-type(7) div:nth-of-type(3)");
+const imgGalleryFED = document.querySelector(".section3 div:nth-of-type(2) div:nth-of-type(2)");
+const imgGalleryHCI = document.querySelector(".section3 div:nth-of-type(3) div:nth-of-type(2)");
+const imgGalleryPT2 = document.querySelector(".section3 div:nth-of-type(4) div:nth-of-type(2)");
+const imgGalleryVID = document.querySelector(".section3 div:nth-of-type(5) div:nth-of-type(2)");
+const imgGalleryPT1 = document.querySelector(".section3 div:nth-of-type(6) div:nth-of-type(2)");
+const imgGalleryVRM2 = document.querySelector(".section3 div:nth-of-type(7) div:nth-of-type(2)");
 
 buttonMeerAfbFED.addEventListener("click", () => {
     if (imgGalleryFED.style.display === "none") {
