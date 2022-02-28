@@ -519,8 +519,9 @@ main div.scrollVoorMeer svg {
 }
 
 .section3 div:not(.sectionMijnWerk , .titelProject) {
-    margin: 2rem 0;
+    margin: 3rem 0;
 }
+
 /* 
     ======================
         Tekst Project
@@ -594,12 +595,18 @@ main div.scrollVoorMeer svg {
     transform: scale(1.1);
 }
 
-.section3 div:nth-of-type(2) div:nth-of-type(2) div,
-.section3 div:nth-of-type(3) div:nth-of-type(2) div,
-.section3 div:nth-of-type(4) div:nth-of-type(2) div,
-.section3 div:nth-of-type(5) div:nth-of-type(2) div,
-.section3 div:nth-of-type(6) div:nth-of-type(2) div,
-.section3 div:nth-of-type(7) div:nth-of-type(2) div {
+.section3 div div:nth-of-type(2) {
+    display: flex;
+    justify-content: flex-end;
+    margin: 1rem 3rem 1rem 0;
+}
+
+.section3 div:nth-of-type(2) div:nth-of-type(3) div,
+.section3 div:nth-of-type(3) div:nth-of-type(3) div,
+.section3 div:nth-of-type(4) div:nth-of-type(3) div,
+.section3 div:nth-of-type(5) div:nth-of-type(3) div,
+.section3 div:nth-of-type(6) div:nth-of-type(3) div,
+.section3 div:nth-of-type(7) div:nth-of-type(3) div {
     display: grid;
     grid-template-columns: 200px 200px 200px;
     grid-template-rows: 200px 200px;
@@ -628,7 +635,7 @@ main div.scrollVoorMeer svg {
     fill: #992D2F;
 }
 
-.section3 div label input {
+.section3 div div label input {
     position: absolute;
     top: 0.65rem;
     left: 1.75rem;
