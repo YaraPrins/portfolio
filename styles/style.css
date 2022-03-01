@@ -8,7 +8,7 @@
     
     Made by
     © Yara Prins
-      02-09-2022
+      01-03-2022
     =========================================
     =========================================
 */
@@ -437,7 +437,8 @@ main div.scrollVoorMeer svg {
     =====================================
 */
 
-.section2 div:nth-of-type(1) div,
+.section2 div:nth-of-type(1) div.sectionOverMij,
+.section2 div:nth-of-type(1) div.programmas,
 .section3 div.sectionMijnWerk,
 .section4 div.sectionContact {
     margin: 1rem 0;
@@ -446,15 +447,25 @@ main div.scrollVoorMeer svg {
     align-items: center;
     position: relative;
     left: -1rem;
+    gap: 0;
 }
 
 .section2 div:nth-of-type(1) div h2,
+.section2 div:nth-of-type(1) div h3,
 .section3 div:nth-of-type(1) h2 {
     text-transform: uppercase;
     font-weight: 400;
     margin-left: 0.5rem;
     font-size: 1.875rem;
 }
+.section2 div:nth-of-type(1) div.programmas {
+    margin-top: 2rem;
+}
+
+.section2 div:nth-of-type(1) div h3 {
+    font-size: 1.3rem;
+}
+
 
 /* 
     ===============================================
@@ -488,22 +499,79 @@ main div.scrollVoorMeer svg {
 }
 
 /* 
-    =======================
+    ====================
         Afb Over Mij
-    =======================
+    ====================
 */
 
-.section2 div:nth-of-type(2) {
+.section2 div.divAfbOverMij{
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.section2 div:nth-of-type(2) img {
+.section2 div.divAfbOverMij img {
     width: 11.75rem;
     height: 15.625rem;
     object-fit: cover;
     margin: 0 2rem;
+}
+
+/* 
+    ====================
+        Programma's
+    ====================
+*/
+.divProgrammasIcons {
+    display: grid;
+    grid-template-columns: 4rem 4rem 4rem 4rem;
+    grid-template-rows: 4rem 4rem;
+    gap: 3rem;
+    width: 25rem;
+    margin: 3rem auto 0;
+}
+
+#HTML,
+#CSS,
+#JS,
+#GITHUB,
+#PHOTOSHOP,
+#ILLUSTRATOR,
+#INDESIGN,
+#XD {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#HTML p,
+#CSS p,
+#JS p,
+#GITHUB p,
+#PHOTOSHOP p,
+#ILLUSTRATOR p,
+#INDESIGN p,
+#XD p {
+    font-size: 0.8rem;
+    margin: 0.3rem 0;
+}
+
+#HTML img,
+#CSS img,
+#JS img,
+#GITHUB img,
+#PHOTOSHOP img,
+#ILLUSTRATOR img,
+#INDESIGN img,
+#XD img {
+    width: 3rem;
+    margin-bottom: 0.3rem;
+}
+
+#HTML {
+    margin: 0;
 }
 
 
@@ -514,8 +582,8 @@ main div.scrollVoorMeer svg {
 */
 
 .section3 {
- max-width: 59rem;
- margin: 8rem auto 0;
+    max-width: 59rem;
+    margin: 8rem auto 0;
 }
 
 .section3 div:not(.sectionMijnWerk , .titelProject) {
@@ -801,7 +869,7 @@ footer {
     justify-content: center;
     width: 100%;
     height: 20rem;
-    z-index: -1;
+    z-index: 1;
 }
 
 
@@ -826,3 +894,48 @@ footer img.textureOnder {
     SOCIAL LINKS | LOGO | LINK TO GITHUB
     ====================================
 */
+
+div.footerOverlay div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+div.footerOverlay div div.copyright p {
+    margin: 3rem 2rem 0 0;
+}
+
+
+div.footerOverlay div.socials {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 0 1rem;
+    height: 12rem;
+}
+
+div.footerOverlay div div.socialsLinkedIn,
+div.footerOverlay div div.socialsGitHub {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin: 0.75rem 2rem;
+}
+
+div.footerOverlay div.socials div.socialsLinkedIn a,
+div.footerOverlay div.socials div.socialsGitHub a {
+   /* text-decoration: none; */
+   color: #C92F32;
+   font-family: "Montserrat";
+   font-weight: lighter;
+   cursor: pointer;
+}
+
+div.footerOverlay div.socials div.socialsLinkedIn a:hover,
+div.footerOverlay div.socials div.socialsGitHub a:hover {
+    color: #000;
+    text-decoration: none;
+
+}

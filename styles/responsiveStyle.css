@@ -8,7 +8,7 @@
     
     Made by
     © Yara Prins
-      02-09-2022
+      01-03-2022
     =========================================
     =========================================
 */
@@ -87,7 +87,7 @@
         margin: 8rem auto;
     }
 
-    .section2 div:nth-of-type(2) {
+    .section2 div.divAfbOverMij {
         display: grid;
         grid-template-columns: 11.75rem 11.75rem;
         grid-template-rows: 15.625rem 15.625rem;
@@ -430,13 +430,22 @@
         margin: 0 1rem;
     }
 
-    .section2 div:nth-of-type(2) {
+    .section2 div.divAfbOverMij {
         display: grid;
         grid-template-columns: 11.75rem;
         grid-template-rows: 15.625rem 15.625rem 15.625rem 15.625rem;
         gap: 3rem;
         align-items: center;
         justify-items: center;
+    }
+
+    .divProgrammasIcons {
+        display: grid;
+        grid-template-columns: 4rem 4rem;
+        grid-template-rows: 4rem 4rem 4rem 4rem;
+        gap: 3rem;
+        width: 11rem;
+        margin: 3rem auto 0;
     }
 
     .section3 {
