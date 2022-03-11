@@ -1,6 +1,6 @@
 # Welkom op mijn portfolio!
 
-<img src="https://github.com/YaraPrins/portfolio/blob/a9979bfdbed56c8a2364c0f6340f1a737c132381/assets/img/afbYaraMain.png " alt="Yara Prins" width="350" align="right"/>
+<img src="https://github.com/YaraPrins/portfolio/blob/a9979bfdbed56c8a2364c0f6340f1a737c132381/assets/img/afbYaraMain.png " alt="Yara Prins" width="300" align="right"/>
 
 Hey! Ik ben Yara, ik ben een tweedejaars Communication & Multimedia Design student op de Hogeschool van Amsterdam. Ik ben 24 jaar oud, woon in Amsterdam, ben een echte 'nerd' en ben altijd in voor een praatje en een grapje.
 
