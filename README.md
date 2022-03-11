@@ -1,4 +1,4 @@
-![Yara Prins](https://github.com/YaraPrins/portfolio/blob/a9979bfdbed56c8a2364c0f6340f1a737c132381/assets/img/afbYaraMain.png)
+![Yara Prins](https://github.com/YaraPrins/portfolio/blob/a9979bfdbed56c8a2364c0f6340f1a737c132381/assets/img/afbYaraMain.png) {:height="260px" width="260px"}
 
 # Welkom op mijn portfolio!
 
