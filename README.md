@@ -1,4 +1,4 @@
-# Welcome on my portfolio!
+# Welcome to my portfolio!
 
 <img src="https://github.com/YaraPrins/portfolio/blob/a9979bfdbed56c8a2364c0f6340f1a737c132381/assets/img/afbYaraMain.png " alt="Yara Prins" width="300" align="right"/>
 
