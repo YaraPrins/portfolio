@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/assets/other/favicon.svg" />
+    <link rel="stylesheet" href="/styles/css/completeProj.css" />
+    <title>Musicr | Portfolio Yara Prins</title>
+  </head>
+
+  <body class="musicr">
+    <header>
+      <!-- =======
+          logo YP 
+          ======= -->
+      <a href="/">
+        <svg
+          id="Group_13"
+          data-name="Group 13"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          width="43.181"
+          height="53.415"
+          viewBox="0 0 43.181 53.415"
+        >
+          <defs>
+            <clipPath id="clip-path">
+              <rect
+                id="Rectangle_48"
+                data-name="Rectangle 48"
+                width="43.181"
+                height="53.415"
+                fill="rgba(0,0,0,0)"
+              />
+            </clipPath>
+          </defs>
+          <g id="Group_12" data-name="Group 12">
+            <g id="Group_11" data-name="Group 11" clip-path="url(#clip-path)">
+              <path
+                id="Path_43"
+                data-name="Path 43"
+                d="M40.319,3.807c-.091,0-.183-.007-.275-.007H8.9c-.092,0-.184,0-.275.007A5.316,5.316,0,0,1,3.8,8.958V43.84a4.96,4.96,0,0,0,5.1,4.809h4.057c1,3.435,5.774,6.038,11.513,6.038s10.511-2.6,11.513-6.038h4.064a4.96,4.96,0,0,0,5.1-4.809V8.958a5.316,5.316,0,0,1-4.824-5.151Z"
+                transform="translate(-2.88 -2.921)"
+                fill="#c4a9a9"
+              />
+              <path
+                id="Path_44"
+                data-name="Path 44"
+                d="M46.2,16.146H20.021A5.4,5.4,0,0,1,15.2,21.437V53.19a2.789,2.789,0,0,0,2.837,2.743H48.194A2.789,2.789,0,0,0,51.03,53.19V21.437a5.4,5.4,0,0,1-4.824-5.291"
+                transform="translate(-11.522 -12.409)"
+                fill="none"
+              />
+              <path
+                id="Path_45"
+                data-name="Path 45"
+                d="M46.2,16.146H20.021A5.4,5.4,0,0,1,15.2,21.437V53.19a2.789,2.789,0,0,0,2.837,2.743h6.128a6.441,6.441,0,0,1,2.174-3.706A10.254,10.254,0,0,1,33.1,49.971a10.676,10.676,0,0,1,6.334,1.848,5.976,5.976,0,0,1,2.778,4.113h5.984A2.789,2.789,0,0,0,51.03,53.19V21.437A5.4,5.4,0,0,1,46.2,16.146Z"
+                transform="translate(-11.522 -12.409)"
+                fill="none"
+                stroke="#992d2f"
+                stroke-miterlimit="10"
+                stroke-width="1"
+              />
+              <path
+                id="Path_46"
+                data-name="Path 46"
+                d="M70.267,168.685c0,3.562-4.036,6.45-9.015,6.45s-9.015-2.888-9.015-6.45,4.036-6.45,9.015-6.45,9.015,2.888,9.015,6.45"
+                transform="translate(-39.605 -124.687)"
+                fill="none"
+              />
+              <path
+                id="Path_59"
+                data-name="Path 59"
+                d="M9.015,0c4.979,0,9.015,2.765,9.015,6.177,0,1.8-1.12,3.416-3.1,4.659a11.418,11.418,0,0,1-5.919,1.518C4.036,12.355,0,9.589,0,6.177S4.036,0,9.015,0Z"
+                transform="translate(12.632 37.548)"
+                fill="none"
+                stroke="#992d2f"
+                stroke-width="1"
+              />
+            </g>
+          </g>
+          <text
+            id="YP"
+            transform="translate(10.987 31.872)"
+            fill="#240808"
+            font-size="20"
+            font-family="Consolas-Bold, Consolas"
+            font-weight="700"
+            letter-spacing="-0.05em"
+          >
+            <tspan x="0" y="0">YP</tspan>
+          </text>
+        </svg>
+      </a>
+
+      <!-- =======
+          Menu Button 
+          ======= -->
+
+      <button id="menu" class="menuActive">
+        <div id="menuBarTop"></div>
+        <div id="menuBarMiddle"></div>
+        <div id="menuBarBottom"></div>
+      </button>
+
+      <!-- =======
+          Menu List Items
+          ======= -->
+
+      <div id="listItems" class="menuClosed">
+        <ul>
+          <li><a href="/index.html#about">About Me</a></li>
+          <li><a href="/index.html#programs">Programs</a></li>
+          <li><a href="/index.html#photos">Photos</a></li>
+          <li><a href="/index.html#mywork">My Work</a></li>
+          <li><a href="/index.html#contact">Contact Me</a></li>
+        </ul>
+      </div>
+
+      <div id="colorMode" class="menuClosed">
+        <div id="modeBtn">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="86.128"
+            height="35.569"
+            viewBox="0 0 86.128 35.569"
+          >
+            <g
+              id="Group_133"
+              data-name="Group 133"
+              transform="translate(-159.016)"
+            >
+              <g
+                id="Group_101"
+                data-name="Group 101"
+                transform="translate(159.015)"
+              >
+                <path
+                  id="Union_10"
+                  data-name="Union 10"
+                  d="M43.064,35.309l-30.63.26L.056,28.324,0,9.178,12.436,0,43.064.268,73.692,0,86.128,9.178l-.056,19.146L73.694,35.569Z"
+                  fill="#c4a9a9"
+                />
+                <g id="moon" transform="translate(57.987 9.359)">
+                  <path
+                    id="Path_120"
+                    data-name="Path 120"
+                    d="M19.115,14.595A8.72,8.72,0,0,1,7.832,3.312,8.721,8.721,0,1,0,19.116,14.6Z"
+                    transform="translate(-2.276 -3.312)"
+                    fill="#240808"
+                    fill-rule="evenodd"
+                  />
+                </g>
+              </g>
+            </g>
+          </svg>
+
+          <svg
+            class="lightOff"
+            id="Group_134"
+            data-name="Group 134"
+            xmlns="http://www.w3.org/2000/svg"
+            width="86.128"
+            height="35.569"
+            viewBox="0 0 86.128 35.569"
+          >
+            <path
+              id="Union_10"
+              data-name="Union 10"
+              d="M43.064,35.309l-30.63.26L.056,28.324,0,9.178,12.436,0,43.064.268,73.692,0,86.128,9.178l-.056,19.146L73.694,35.569Z"
+              transform="translate(0 0)"
+              fill="#240808"
+            />
+            <g id="light-filled" transform="translate(11.458 9.359)">
+              <path
+                id="Path_139"
+                data-name="Path 139"
+                d="M16.875,2.25h1.2V5.235h-1.2Z"
+                transform="translate(-9.051 -2.25)"
+                fill="#c4a9a9"
+              />
+              <path
+                id="Path_140"
+                data-name="Path 140"
+                d="M24.4,8.167l2.111-2.111.851.852L25.249,9.018Z"
+                transform="translate(-12.549 -4.02)"
+                fill="#c4a9a9"
+              />
+              <path
+                id="Path_141"
+                data-name="Path 141"
+                d="M28.17,16.875h2.985v1.2H28.17Z"
+                transform="translate(-14.303 -9.051)"
+                fill="#c4a9a9"
+              />
+              <path
+                id="Path_142"
+                data-name="Path 142"
+                d="M24.4,25.251l.851-.851,2.111,2.111-.851.851Z"
+                transform="translate(-12.552 -12.55)"
+                fill="#c4a9a9"
+              />
+              <path
+                id="Path_143"
+                data-name="Path 143"
+                d="M16.875,28.17h1.2v2.985h-1.2Z"
+                transform="translate(-9.051 -14.303)"
+                fill="#c4a9a9"
+              />
+              <path
+                id="Path_144"
+                data-name="Path 144"
+                d="M6.072,26.518l2.111-2.111.851.851L6.923,27.369Z"
+                transform="translate(-4.027 -12.553)"
+                fill="#c4a9a9"
+              />
+              <path
+                id="Path_145"
+                data-name="Path 145"
+                d="M2.25,16.875H5.235v1.2H2.25Z"
+                transform="translate(-2.25 -9.051)"
+                fill="#c4a9a9"
+              />
+              <path
+                id="Path_146"
+                data-name="Path 146"
+                d="M6.064,6.914l.852-.85L9.027,8.175l-.851.851Z"
+                transform="translate(-4.024 -4.024)"
+                fill="#c4a9a9"
+              />
+              <path
+                id="Path_147"
+                data-name="Path 147"
+                d="M14.861,11.25a3.611,3.611,0,1,0,3.611,3.611A3.611,3.611,0,0,0,14.861,11.25Z"
+                transform="translate(-6.435 -6.435)"
+                fill="#c4a9a9"
+              />
+            </g>
+          </svg>
+
+          <svg
+            class="lightMode"
+            id="Group_99"
+            data-name="Group 99"
+            xmlns="http://www.w3.org/2000/svg"
+            width="24.332"
+            height="27.008"
+            viewBox="0 0 24.332 27.008"
+          >
+            <path
+              id="Path_10"
+              data-name="Path 10"
+              d="M7.265,10.2,14.284.021,0,0Z"
+              transform="translate(4.901 16.809)"
+              fill="#9c4242"
+            />
+            <path
+              id="Path_11"
+              data-name="Path 11"
+              d="M0,10.256,12.175,4.708,6.971,0Z"
+              transform="translate(12.157 16.752)"
+              fill="#ba5151"
+            />
+            <path
+              id="Path_12"
+              data-name="Path 12"
+              d="M0,4.7l12.105,5.569L4.958,0Z"
+              transform="translate(0.052 16.739)"
+              fill="#6b2e2e"
+            />
+            <path
+              id="Path_13"
+              data-name="Path 13"
+              d="M.047,14.366,5.018,9.7l-.033-.056,0,0L0,0Z"
+              transform="translate(0.041 7.068)"
+              fill="#783434"
+            />
+            <path
+              id="Path_14"
+              data-name="Path 14"
+              d="M14.251,10.793,7.2,0,0,10.773Z"
+              transform="translate(5.024 6.057)"
+              fill="#c25353"
+            />
+            <path
+              id="Path_15"
+              data-name="Path 15"
+              d="M7.013,10.742,12.22,1.024,0,0Z"
+              transform="translate(12.097 6.069)"
+              fill="#ed6767"
+            />
+            <path
+              id="Path_16"
+              data-name="Path 16"
+              d="M0,.95,5.056,10.73,12.232,0Z"
+              transform="translate(0 6.077)"
+              fill="#b34d4d"
+            />
+            <path
+              id="Path_17"
+              data-name="Path 17"
+              d="M0,6.082,12.15,7.1.048,0Z"
+              transform="translate(12.109 0.001)"
+              fill="#ff6e6e"
+            />
+            <path
+              id="Path_18"
+              data-name="Path 18"
+              d="M0,7.036l12.153-.944L12.2,0Z"
+              transform="translate(0.005 0)"
+              fill="#c75555"
+            />
+            <path
+              id="Path_19"
+              data-name="Path 19"
+              d="M0,9.658l5.192,4.695L5.174,0Z"
+              transform="translate(19.081 7.125)"
+              fill="#de5f5f"
+            />
+          </svg>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <a class="goBack" href="/">back</a>
+
+      <section>
+        <div class="heading2">
+          <img
+            src="./assets/img/red_d20_dice_big.png"
+            alt="flat colored illustration of a small red twenty sided die"
+          />
+          <h1>Musicr &dash; Music Matcher</h1>
+        </div>
+
+        <img
+          src="/assets/img/mockups/ProjectTech_MockUp1.png"
+          alt="six phones laying diagonal flat on a surface in two rows of three, with mock ups of project Musicr: a music matcher."
+        />
+
+        <div>
+          <p class="firstP">
+            This was a project for one of my classes, called Project Tech. This
+            class was a specialty class which you could sign up for if you
+            wanted to dive deeper in coding, where our knowledge of previous
+            classes were combined (front-end, back-end and design knowledge).
+          </p>
+
+          <p>
+            During this project, we were tasked to make a matching application.
+            This could mean matching people with people, people to objects or
+            locations, but also animals to animals, etc. The project was split
+            up into three different classes, but all working on the same
+            project.
+          </p>
+
+          <p>
+            For the Back-End part of the application, it needed to be connected
+            to a database, where we also needed to work with CRUD methods, to
+            add or update/delete information (i.e. with an sign up or a change
+            name option), work with Node and Express JS to set up our own
+            Server, and work with a Templating Engine. For the Front-End side of
+            this assignment we had to have some sort of Progressive Enhancement
+            for our application and work with an third-party API. During this
+            project, I have worked with NodeJS, ExpressJS, Sass, HandlebarsJS,
+            as well as MongoDB for the database.
+          </p>
+
+          <p>
+            You can find this project on my
+            <a href="https://github.com/YaraPrins/tech-her" target="_blank"
+              >GitHub Repository</a
+            >
+          </p>
+        </div>
+
+        <div>
+          <div>
+            <img
+              src="./assets/img/process/Tech/homescreenSketch.png"
+              alt="screenshot of the original website of D&amp;D Beyond, taken in July 2023"
+            />
+            <figcaption>from wireframe idea</figcaption>
+          </div>
+
+          <div>
+            <img
+              src="./assets/img/process/Tech/homescreenFinal.png"
+              alt="screenshot of the replica website of D&amp;D Beyond made by Yara Prins, taken in November 2021"
+            />
+            <figcaption>to final design</figcaption>
+          </div>
+        </div>
+
+        <div>
+          <p>
+            I decided to make an matching application for people, matching them
+            with new music. Users of this app can, when making their account,
+            select the music that they are already fan off, listening to, or
+            preference to certain genres. Then, the app will show them
+            recommended music, based on similar artist, songs, or popular tracks
+            that others are fan off.
+          </p>
+          <p>
+            Users get to like, dislike, or super like a song, and will be able
+            to immediately add the song to their music library of choice. Songs
+            that they like will also be saved in a Liked Songs library on the
+            app itself, so the user can keep track of their liked songs and
+            easily find them again if needed.
+          </p>
+          <p>
+            In the app, you can connect with your friends (whome also use the
+            app), and you can get matched sooner with songs that your friends
+            have also liked (as in, if one or more of your friends like a song,
+            that song will appear quicker on your homescreen to match with, then
+            songs based of the music library from for example Spotify, Apple
+            Music or the In-App Music Library).
+          </p>
+          <p>
+            I'm very proud of how the app turned out, and if you want to test it
+            out yourself, you can find it at my
+            <a href="https://github.com/YaraPrins/tech-her" target="_blank"
+              >Github Repository</a
+            >
+          </p>
+        </div>
+      </section>
+
+      <section>
+        <h2>Process</h2>
+
+        <div>
+          <h3>Start</h3>
+          <p>
+            I started this project with brainstorming about what kind of
+            application I wanted to make, and what makes up a matching
+            application. I made a list of what would interest me to make, and
+            also listed some features, made a requirement list, and made a
+            couple of job stories (one of which I chose to continue working on).
+          </p>
+          <p>
+            After brainstorming, I began to roughly sketch out some wireframes
+            of what I invisioned the designs would looked like. After making
+            small tweaks here and there, I came up with a final idea of how I
+            wanted it to look and what screens I wanted to incorporate.
+          </p>
+          <img
+            src="./assets/img/process/Tech/requirementsText.png"
+            alt="screenshot of the brainstorm, concept ideas, features, job stories, and requirement lists."
+          />
+          <img
+            src="./assets/img/process/Tech/sketchWireframes1.png"
+            alt="screenshot of the early wireframe sketches, designed by Yara Prins."
+          />
+          <p>
+            When I got the idea a bit more fleshed out, I began to experiment
+            with color palettes, and made the first few versions of the design.
+            I tried out a few different color combinations for the background,
+            and I noticed the black and lilac color combination worked best.
+            After deciding on the background colors, I tried out different
+            accent color options (for buttons and other), and after landing on
+            the light pastel yellow, I started completing my design. When I was
+            finished however, I wasn't quite satisfied, I struggled with
+            distinguishing buttons from the 'selected' state. and so I made my
+            final version, which has the 'selected' state with a small part
+            filled in.
+          </p>
+        </div>
+        <div>
+          <h3>Coding</h3>
+          <p>
+            With my design finished, it was time to start the coding process.
+            This took quite a bit of time, seeing it was my first experience
+            with NodeJS, ExpressJS, templating enginges, Sass and MongoDB. I can
+            honestly say however, that I've got the basics down for those
+            programs, thanks to this project!
+          </p>
+          <p>
+            Working with Express to easily make my own server, was quite nice.
+            After learning about the terms and reasons behind writing these
+            servers (such as req.params, app.get, res.render, req res), I got
+            the hang of it pretty fast, and could try things myself. One thing I
+            did struggled with however, was setting up HandlebarsJS and work
+            with multiple pages / templates. I didn't notice at first that there
+            where three versions of Handlebars, and that I worked with the
+            incorrect one for the first few weeks of the project. This resulted
+            in unnecessary hard work and after figuring out what went wrong, a
+            few deep sighs (and a few smackes on the head whoops). But, besides
+            the frustrations I had with Handlebars, I really enjoyed working
+            with it.
+          </p>
+          <p>
+            This project was also the first time where I used any sort of
+            database. During this project we worked with MongoDB. It wasn't that
+            difficult to learn, but it did take a while to set it up correctly.
+            The first time that I filled out a form and it was succesfully send
+            to my database, that was a very satisfying and awesome feeling!
+          </p>
+
+          <p>
+            During this project I had to have some sort of Progressive
+            Enhancement, and to have worked with a third-party API. I really
+            wanted to incorporate the Spotify API, to be able to work with the
+            music library and collect data from it, to make my application work.
+            Sadly, this didn't work out well, the documentation for the API was
+            quite difficult to understand, and what I tried with connecting it
+            with a script, didn't work. I also tried to work with other music
+            API's, but those needed payment or didn't work on localhost (it
+            needed a domain name). So, after discussing it with my professor, we
+            decided to skip the music API (keeping it part as my concept, but
+            not for my prototype), and configure a random local API, seeing he
+            knew I was capable of working with API's, but didn't have the time
+            or equipment needed to set it up. For that reason I incorporated the
+            geolocation API for the sign up page, instead of the music API.
+          </p>
+
+          <p>
+            I would have loved to have continued working on this project and
+            made my concept and designs all come to life, but with limited time
+            and resources this was quite difficult to do. Maybe in the future
+            however, I could continue this project and finish the application.
+          </p>
+        </div>
+
+        <div class="breakdownSketch">
+          <img
+            src="./assets/img/process/Tech/requirementsText.png"
+            alt="screenshot of the brainstorm, concept ideas, features, job stories, and requirement lists."
+          />
+          <img
+            src="./assets/img/process/Tech/sketchWireframes1.png"
+            alt="screenshot of the early wireframe sketches, designed by Yara Prins."
+          />
+        </div>
+      </section>
+
+      <section>
+        <h2>First ideas and versions</h2>
+        <img
+          src="./assets/img/process/Tech/requirementsText.png"
+          alt="screenshot of the brainstorm, concept ideas, features, job stories, and requirement lists."
+        />
+        <img
+          src="./assets/img/process/Tech/sketchWireframes1.png"
+          alt="screenshot of the early wireframe sketches, designed by Yara Prins."
+        />
+        <img
+          src="./assets/img/process/Tech/wireframes.png"
+          alt="screenshot of the final wireframes, designed by Yara Prins."
+        />
+        <img
+          src="./assets/img/process/Tech/kleurenOpties.png"
+          alt="screenshot of the first color palette options."
+        />
+        <img
+          src="./assets/img/process/Tech/kleurenOpties2.png"
+          alt="screenshot of the second and final color palette options."
+        />
+        <img
+          src="./assets/img/process/Tech/iteratiesKnopKleur.png"
+          alt="screenshot of variations in button color for the login and the sign up page, designed by Yara Prins."
+        />
+        <img
+          src="./assets/img/process/Tech/schermenVersie1.png"
+          alt="screenshot of the first iterations of the app design, designed by Yara Prins."
+        />
+        <img
+          src="./assets/img/process/Tech/schermenVersie2.png"
+          alt="screenshot of the second iterations of the app design, designed by Yara Prins."
+        />
+        <img
+          src="./assets/img/process/Tech/schermenVersie3.png"
+          alt="screenshot of the third iterations of the app design, designed by Yara Prins."
+        />
+      </section>
+
+      <section>
+        <h2>Final Design and Design Elements</h2>
+        <img
+          src="./assets/img/process/Tech/designElements.png"
+          alt="screenshot of the design elements in the application, designed by Yara Prins."
+        />
+        <img
+          src="./assets/img/process/Tech/schermenVersie4.png"
+          alt="screenshot of the final design for the application, designed by Yara Prins."
+        />
+      </section>
+    </main>
+
+    <footer>
+      <div>
+        <a href="mailto:yaraprins@live.nl"
+          ><img src="./assets/img/icons/email-solid.png" alt="link to email"
+        /></a>
+        <a href="tel:+31 6 83 59 06 05"
+          ><img src="./assets/img/icons/phone.png" alt="link to phone"
+        /></a>
+        <a href="https://github.com/YaraPrins"
+          ><img src="./assets/img/icons/github.png" alt="link to GitHub"
+        /></a>
+        <a href="https://www.linkedin.com/in/yaraprins/"
+          ><img src="./assets/img/icons/linkedin.png" alt="link to LinkedIn"
+        /></a>
+      </div>
+
+      <p>Made by Yara Prins</p>
+    </footer>
+
+    <script defer src="/main.js"></script>
+  </body>
+</html>
