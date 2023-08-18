@@ -1,16 +1,15 @@
-# Welkom op mijn portfolio!
+# Welcome on my portfolio!
 
 <img src="https://github.com/YaraPrins/portfolio/blob/a9979bfdbed56c8a2364c0f6340f1a737c132381/assets/img/afbYaraMain.png " alt="Yara Prins" width="300" align="right"/>
 
-Hey! Ik ben Yara, ik ben een tweedejaars Communication & Multimedia Design student op de Hogeschool van Amsterdam. Ik ben 24 jaar oud, woon in Amsterdam, ben een echte 'nerd' en ben altijd in voor een praatje en een grapje.
+Hi,
+My name is Yara.
+I am a Graphic Design & Front End Development Student
+In this portfolio, you will find my most notable works so far in my studies and personal work. Feel free to roam around, inspect the code, or to contact me for any further questions and/ or for work.
 
-Ik ben een spontane, sportieve en lieve meid die hard door kan werken, let op de details en als ik ergens aan begin wil ik het graag afmaken.
+I'm now a fourth year Communication & Multimedia Design student on the Amsterdam University of Applied Sciences. I have a love for design as well as coding, and I'm a very eager learner.
 
-Mijn hobbies zijn onder andere, muziek luisteren (vraag me niet welke muziek, ik heb echt een te brede muzieksmaak om daar een antwoord op te geven haha! Van metal / hardrock, naar jazz, naar lo-fi, naar nummers van musicals, ik ben van alle partijen thuis), films en series af gaan, ook hou ik wel van een drankje doen bij een leuke kroeg en kan je me af en toe wel eens vinden bij een poolcafé!
-
-Verder hou ik van Star Wars, Lord of the Rings, gamen en ben ik iedere week bezig met het het spelen van het spel Dungeons & Dragons (mijn grote passie), samen met wat vrienden.
-
-Ook vind ik de Front-End (en Design kant) echt super tof! Ik heb dan ook dit portfolio zelf ontworpen en zelf gecodeerd met HTML, CSS en JS. Mocht er interesse naar zijn, kan mijn code van dit portfolio altijd bekeken worden via mijn GitHub Repository, waarin ik het ook host.
+I'm a very enthusiastic, positive, talkative and kind person, and I'm always in for a bit of banter. Generally speaking though, I'm just a massive nerd. Besides coding and designing, I love playing Dungeons & Dragons, watching Lord of the Rings and Star Wars, playing games such as Assassins Creed, Portal, Life is Strange, The Last of Us and more. I like photography, making art, listen to a ton of different music, and I love going to concerts.
 
 
 
