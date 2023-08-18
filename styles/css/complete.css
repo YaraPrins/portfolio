@@ -1,0 +1,829 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  --bgrDark: #240808;
+  --bgrLight: #C4A9A9;
+  --txtDark: #240808;
+  --txtLight: #C4A9A9;
+  --txtOverlay: #C4A9A9;
+  --txtHvrLight: #C25353;
+  --txtUnderline: #C25353;
+  --menuHvrLight: #796969;
+  --menuHvrDark: #282323;
+}
+body.modeLight {
+  --bgrDark: #C4A9A9;
+  --bgrLight: #240808;
+  --txtDark: #C4A9A9;
+  --txtLight: #240808;
+  --txtHvrLight: #C25353;
+  --txtUnderline: #C25353;
+  --menuHvrLight: #796969;
+  --menuHvrDark: #282323;
+}
+
+@media (prefers-color-scheme: light) {
+  body {
+    --bgrDark: #C4A9A9;
+    --bgrLight: #240808;
+    --txtDark: #C4A9A9;
+    --txtLight: #240808;
+    --txtHvrLight: #C25353;
+    --txtUnderline: #C25353;
+    --menuHvrLight: #796969;
+    --menuHvrDark: #282323;
+  }
+}
+@font-face {
+  font-family: "consolas";
+  src: url(/assets/fonts/consola.ttf);
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "consolas";
+  src: url(/assets/fonts/consolab.ttf);
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: "consolas";
+  src: url(/assets/fonts/consolai.ttf);
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "consolas";
+  src: url(/assets/fonts/consolaz.ttf);
+  font-weight: 800;
+  font-style: italic;
+}
+/* ================= */
+/*  General Styling  */
+/* ================= */
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 9rem;
+}
+
+body {
+  --fntHeadings: "consolas", arial, sans-serif;
+  background-color: var(--bgrDark);
+  overflow-x: hidden;
+}
+
+/*  custom scrollbar  */
+::-webkit-scrollbar {
+  width: 0.2rem;
+  background: transparent;
+}
+::-webkit-scrollbar-track {
+  background: none;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--bgrLight);
+  border-radius: 100vw;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--txtHvrLight);
+}
+
+h1, h2, h3, h4, h5, h6, p, a, button {
+  color: var(--txtLight);
+  font-family: var(--fntHeadings);
+}
+
+h1, h2, h3, h4, h5, h6, a, button {
+  font-weight: 800;
+}
+
+div.heading2 {
+  order: 1;
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.2rem;
+}
+div.heading2 img {
+  order: initial;
+  max-width: 2rem;
+  margin: 0 1rem 0 0;
+}
+div.heading2 h2 {
+  font-size: 2rem;
+}
+
+header {
+  width: calc(100vw - 6rem);
+  margin: 0 3rem;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  /* ======================================= */
+  /*  Logo YP | Link to home | SVG of logo   */
+  /* ======================================= */
+  /* =============== */
+  /*  Hamburger SVG  */
+  /* =============== */
+  /* ======================== */
+  /*  Mobile menu list items  */
+  /* ======================== */
+}
+header + a, header svg {
+  z-index: 2;
+  position: relative;
+  margin: 1.3rem 0;
+}
+header #Group_13 path:first-child {
+  fill: var(--bgrLight);
+}
+header #Group_13 text {
+  fill: var(--bgrDark);
+}
+header #menu {
+  position: absolute;
+  top: 2rem;
+  right: 0rem;
+  z-index: 2;
+  height: 1.6rem;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+header #menu > div:nth-of-type(1),
+header #menu > div:nth-of-type(2),
+header #menu > div:nth-of-type(3) {
+  display: block;
+  width: 2rem;
+  height: 0.25rem;
+  border-radius: 15em;
+  background-color: var(--bgrLight);
+}
+header #menu:hover > div:nth-of-type(1),
+header #menu:hover > div:nth-of-type(2),
+header #menu:hover > div:nth-of-type(3) {
+  background-color: var(--menuHvrLight);
+}
+header #menu #menuBarTop {
+  transform: rotate(45deg);
+  transform-origin: left;
+  transition: all 200ms ease;
+}
+header #menu #menuBarMiddle {
+  display: none;
+  transition: all 200ms ease;
+}
+header #menu #menuBarBottom {
+  transform: rotate(-45deg);
+  transform-origin: left;
+  transition: all 200ms ease;
+}
+header #menu.menuActive #menuBarTop,
+header #menu.menuActive #menuBarMiddle,
+header #menu.menuActive #menuBarBottom {
+  transition: all 200ms ease;
+  transform: none;
+  display: block;
+}
+header #listItems {
+  display: block;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  z-index: 1;
+  background-color: var(--bgrDark);
+}
+header #listItems.menuClosed {
+  display: none;
+}
+header #listItems ul {
+  margin: 2rem;
+  list-style: none;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+header #listItems ul li {
+  padding: 1rem 0;
+}
+header #listItems ul li a {
+  text-decoration: none;
+  font-size: 2rem;
+}
+header #listItems ul li a:hover, header #listItems ul li a:active, header #listItems ul li a:focus {
+  color: var(--txtHvrLight);
+}
+header #listItems ul li afocus {
+  text-decoration: underline;
+  outline-style: none;
+}
+header #colorMode {
+  display: flex;
+  position: fixed;
+  z-index: 999;
+  justify-content: center;
+  width: 100vw;
+}
+header #colorMode div {
+  display: flex;
+  position: fixed;
+  bottom: 5rem;
+  z-index: 999;
+  justify-content: center;
+  align-items: center;
+}
+header #colorMode div svg {
+  cursor: pointer;
+}
+header #colorMode div svg:nth-of-type(1) {
+  position: relative;
+}
+header #colorMode div #Group_134 {
+  position: absolute;
+  transition: all 700ms ease;
+}
+header #colorMode div .lightOff {
+  transition: all 700ms ease;
+  opacity: 0;
+}
+header #colorMode div .darkMode {
+  transition: all 700ms ease;
+  position: absolute;
+  left: 3.5rem;
+  transform: rotate(360deg);
+}
+header #colorMode div .lightMode {
+  transition: all 700ms ease;
+  position: absolute;
+  left: 0.5rem;
+}
+header #colorMode.menuClosed {
+  display: none;
+}
+
+main {
+  margin: 0 3rem;
+  /* ======================================= */
+  /*  Intro Text | CTAs | My work | Contact  */
+  /* ======================================= */
+}
+main .introText {
+  display: flex;
+  flex-direction: column;
+  margin: 13rem 0rem 3rem;
+  flex-wrap: wrap;
+  gap: 2.5rem;
+  /* ============================================ */
+  /*  See my work & Contact me | Call-to-Actions  */
+  /* ============================================ */
+}
+main .introText h1 {
+  order: 2;
+  font-size: 1.6rem;
+}
+main .introText h1 span {
+  display: block;
+}
+main .introText p {
+  order: 3;
+}
+main .introText img {
+  order: 1;
+  transform: rotate(20deg);
+  max-width: 8rem;
+  position: absolute;
+  top: 6rem;
+  right: -2.5rem;
+  z-index: 0;
+}
+main .introText .ctaIntro {
+  order: 4;
+  display: flex;
+  align-self: center;
+}
+main .introText .ctaIntro a, main .introText .ctaIntro p {
+  order: initial;
+  padding: 0.3rem 0.5rem;
+}
+main .introText .ctaIntro a {
+  text-transform: uppercase;
+  text-decoration: none;
+}
+main .introText .ctaIntro a:nth-of-type(1) {
+  text-decoration: underline var(--txtUnderline);
+  text-underline-offset: 0.3em;
+}
+main .introText .ctaIntro a:nth-of-type(1):hover {
+  color: var(--txtHvrLight);
+  text-decoration-color: var(--txtHvrLight);
+}
+main .introText .ctaIntro a:nth-of-type(2) {
+  margin-left: 0.5rem;
+  border: 1px solid var(--txtUnderline);
+}
+main .introText .ctaIntro a:nth-of-type(2):hover {
+  color: var(--txtDark);
+  background-color: var(--txtUnderline);
+}
+main .divImgYara {
+  display: none;
+}
+main .scrollForMore {
+  margin: 3rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.6rem;
+}
+main .aboutMe section:nth-of-type(1) {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 5rem;
+}
+main .aboutMe section:nth-of-type(1) div {
+  order: 1;
+}
+main .aboutMe section:nth-of-type(1) div img {
+  order: initial;
+  margin: 0 1rem 0 0;
+}
+main .aboutMe section:nth-of-type(1) p:nth-of-type(1) {
+  order: 2;
+}
+main .aboutMe section:nth-of-type(1) p:nth-of-type(2) {
+  order: 4;
+}
+main .aboutMe section:nth-of-type(1) img {
+  order: 3;
+  align-self: center;
+  margin: 1.5rem 0;
+}
+main .aboutMe section:nth-of-type(2) {
+  margin-bottom: 5rem;
+}
+main .aboutMe section:nth-of-type(2) h3 {
+  margin-bottom: 2rem;
+}
+main .aboutMe section:nth-of-type(2) .gridPrograms {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+  gap: 2.5rem 1.8rem;
+}
+main .aboutMe section:nth-of-type(2) .gridPrograms div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 5.3rem;
+  width: 2rem;
+}
+main .aboutMe section:nth-of-type(2) .gridPrograms svg path {
+  fill: var(--bgrLight);
+}
+main .aboutMe section:nth-of-type(3) {
+  margin-bottom: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.4rem;
+}
+main .aboutMe section:nth-of-type(3) h3 {
+  margin-bottom: 2rem;
+}
+main .aboutMe section:nth-of-type(3) img {
+  width: 100%;
+  height: 12rem;
+  object-fit: cover;
+  object-position: center;
+}
+main .aboutMe section:nth-of-type(3) img:nth-of-type(1) {
+  object-position: 0 55%;
+}
+main .aboutMe section:nth-of-type(3) img:nth-of-type(2) {
+  object-position: 50%;
+}
+main .aboutMe section:nth-of-type(4) {
+  display: none;
+}
+main .myWork {
+  margin-bottom: 5rem;
+}
+main .myWork section:first-of-type {
+  margin-bottom: 2.5rem;
+}
+main .myWork .projectImg {
+  width: 100%;
+  height: 10rem;
+  margin: 1rem 0;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main .myWork .projectImg a {
+  background-image: url("/assets/img/mockups/FED-MockUp2.png");
+  background-blend-mode: overlay;
+  background-color: rgba(0, 0, 0, 0.6);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+main .myWork .projectImg a h4 {
+  color: var(--txtOverlay);
+  max-width: 12.2rem;
+  text-align: center;
+}
+main .myWork .projectImg a:hover, main .myWork .projectImg a:active {
+  background-size: 105%;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+main .myWork .projectImg a:hover h4, main .myWork .projectImg a:active h4 {
+  color: var(--txtHvrLight);
+}
+main .myWork .projectImg:nth-of-type(3) a {
+  background-image: url("/assets/img/mockups/ProjectTech_MockUp1.png");
+}
+main .myWork .projectImg:nth-of-type(4) a {
+  background-image: url("/assets/img/mockups/PTH-MockUp.png");
+}
+main .myWork .projectImg:nth-of-type(5) a {
+  background-image: url("/assets/img/mockups/portfolioMockUp.png");
+}
+main .myWork .projectImg:nth-of-type(6) a {
+  background-image: url("/assets/img/mockups/Cubefields-MockUp2.png");
+}
+main .myWork .projectImg:nth-of-type(7) a {
+  background-image: url("/assets/img/mockups/ProjectTeam2-MockUp2.png");
+}
+main .myWork .projectImg:nth-of-type(8) a {
+  background-image: url("/assets/img/mockups/VID-MockUp2.png");
+}
+main .myWork .projectImg:nth-of-type(9) a {
+  background-image: url("/assets/img/mockups/IP-MockUp.png");
+}
+main .myWork .projectImg:nth-of-type(10) a {
+  background-image: url("/assets/img/mockups/vormgeving2_mockup2.png");
+}
+main .myWork .projectImg:nth-of-type(11) a {
+  background-image: url("/assets/img/mockups/projectRMDD-mockup1.png");
+}
+main .myWork .projectImg:nth-of-type(12) a {
+  background-image: url("/assets/img/mockups/vormgeving2_mockup3.png");
+}
+main .myWork .projectImg:nth-of-type(13) a {
+  background-image: url("/assets/img/mockups/otherMockUp.png");
+}
+main .myWork .projectImg.seeLessProjects {
+  display: none;
+}
+main .myWork section:last-of-type {
+  display: flex;
+  justify-content: center;
+}
+main .myWork section:last-of-type button {
+  margin-top: 2rem;
+  cursor: pointer;
+  border: none;
+  background: none;
+  text-transform: uppercase;
+  text-decoration: underline var(--txtUnderline);
+  text-underline-offset: 0.3em;
+}
+main .myWork section:last-of-type button:hover {
+  color: var(--txtHvrLight);
+  text-decoration-color: var(--txtHvrLight);
+}
+main .contactMe {
+  margin-bottom: 5rem;
+}
+main .contactMe section:nth-of-type(1) {
+  margin: 0 0 2.5rem 0;
+}
+main .contactMe section:last-of-type {
+  display: flex;
+  flex-direction: column;
+}
+main .contactMe section:last-of-type div {
+  margin: 0 0 1.5rem 0;
+  display: flex;
+  align-items: center;
+}
+main .contactMe section:last-of-type div img {
+  margin: 0 2rem 0 0;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 0 1.5rem 0;
+}
+footer div {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+footer div a {
+  margin: 0 0.6rem;
+}
+
+@media screen and (min-width: 950px) {
+  header {
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr;
+    align-items: center;
+    margin: 1rem 0;
+    padding: 0 5rem;
+    /* ======================== */
+    /*  Mobile menu list items  */
+    /* ======================== */
+  }
+  header + a, header svg {
+    margin: 1.3rem 0rem;
+    order: 1;
+  }
+  header #menu {
+    display: none;
+  }
+  header #listItems {
+    display: initial;
+    position: initial;
+    width: initial;
+    margin-right: 5rem;
+    order: 3;
+    bottom: initial;
+    left: initial;
+    background: none;
+    z-index: initial;
+  }
+  header #listItems.menuClosed {
+    display: initial;
+  }
+  header #listItems ul {
+    flex-direction: row;
+    gap: 2rem;
+    justify-content: flex-end;
+    margin-right: 5rem;
+  }
+  header #listItems ul li {
+    padding: 1rem 0;
+    position: relative;
+  }
+  header #listItems ul li a {
+    font-size: 1.2rem;
+  }
+  header #listItems ul li a::after {
+    content: "";
+    position: absolute;
+    background-color: var(--txtHvrLight);
+    height: 0.14rem;
+    width: 100%;
+    border-radius: 1rem;
+    bottom: 0.6rem;
+    left: 0;
+    transition: all 200ms ease;
+    transform: scale(0, 1);
+  }
+  header #listItems ul li a:hover::after {
+    transform: scale(1, 1);
+    transform-origin: center;
+  }
+  header #colorMode {
+    order: 3;
+    margin-left: 2rem;
+    position: initial;
+    width: initial;
+  }
+  header #colorMode div {
+    display: flex;
+    position: fixed;
+    bottom: initial;
+  }
+  header #colorMode div .lightOff {
+    position: initial;
+  }
+  header #colorMode.menuClosed {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+  }
+}
+@media screen and (min-width: 600px) {
+  main .aboutMe section:nth-of-type(3) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.4rem;
+  }
+  main .aboutMe section:nth-of-type(3) h3 {
+    grid-column: span 2;
+    margin-bottom: 0;
+  }
+  main .myWork {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0rem 1.5rem;
+  }
+  main .myWork section:first-of-type {
+    grid-column: span 2;
+  }
+  main .myWork section:last-of-type {
+    grid-column: span 2;
+  }
+  main .contactMe section:last-of-type {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+@media screen and (min-width: 675px) {
+  main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 1rem 3rem;
+  }
+  main .introText .ctaIntro {
+    align-self: flex-start;
+  }
+  main .divImgYara {
+    display: initial;
+    align-self: center;
+    justify-self: center;
+    margin-left: 2rem;
+  }
+  main .divImgYara img {
+    width: 100%;
+    max-width: 20rem;
+    position: relative;
+    top: 2rem;
+  }
+  main .scrollForMore {
+    grid-row-start: 2;
+    grid-column: span 2;
+  }
+  main .aboutMe {
+    grid-row-start: 4;
+    grid-column-start: span 2;
+    display: grid;
+    gap: 1rem 3rem;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+  }
+  main .aboutMe section:nth-of-type(1) {
+    margin-bottom: 4.5rem;
+  }
+  main .aboutMe section:nth-of-type(1) > img {
+    display: none;
+  }
+  main .aboutMe section:nth-of-type(2) {
+    grid-row-start: 2;
+    margin-bottom: 0;
+  }
+  main .aboutMe section:nth-of-type(2) h3 {
+    margin-bottom: 2rem;
+  }
+  main .aboutMe section:nth-of-type(2) .gridPrograms {
+    gap: 2.5rem 2rem;
+  }
+  main .aboutMe section:nth-of-type(3) {
+    grid-row-start: span 2;
+    margin-bottom: 0;
+    margin-top: 3.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  main .aboutMe section:nth-of-type(3) h3 {
+    margin-bottom: 0;
+  }
+  main .aboutMe section:nth-of-type(3) img {
+    width: 100%;
+    height: 12rem;
+    object-fit: cover;
+    object-position: center;
+  }
+  main .aboutMe section:nth-of-type(3) img:nth-of-type(1) {
+    object-position: 0 55%;
+  }
+  main .aboutMe section:nth-of-type(3) img:nth-of-type(2) {
+    object-position: 50%;
+  }
+  main .aboutMe section:nth-of-type(4) {
+    display: initial;
+    margin-top: 2rem;
+    grid-column-start: 2;
+    justify-self: center;
+  }
+  main .myWork {
+    grid-row-start: 5;
+    grid-column-start: span 2;
+    margin-bottom: 5rem;
+  }
+  main .contactMe {
+    grid-row-start: 6;
+    grid-column-start: span 2;
+    margin-bottom: 5rem;
+  }
+}
+@media screen and (min-width: 950px) {
+  main {
+    margin: 2rem 5rem 0;
+  }
+  main .divImgYara img {
+    max-width: 23rem;
+    position: relative;
+    top: 6rem;
+  }
+  main .aboutMe {
+    margin-top: 5rem;
+    gap: 1rem 3rem;
+  }
+  main .aboutMe section:nth-of-type(2) {
+    grid-row-start: 1;
+    grid-column-start: 2;
+  }
+  main .aboutMe section:nth-of-type(3) {
+    grid-row-start: 2;
+    grid-column-start: span 2;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: fit-content 1fr;
+    margin: 4rem 0 3rem;
+  }
+  main .aboutMe section:nth-of-type(3) h3 {
+    margin-bottom: 0;
+    grid-column-start: span 4;
+  }
+  main .aboutMe section:nth-of-type(4) {
+    margin: 3rem 0 2rem;
+  }
+  main .myWork {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 0rem 1.5rem;
+    margin-bottom: 7rem;
+  }
+  main .myWork section:first-of-type {
+    grid-column: span 3;
+  }
+  main .myWork section:first-of-type p {
+    max-width: 44rem;
+  }
+  main .myWork section:last-of-type {
+    grid-column: span 3;
+  }
+  main .contactMe {
+    margin-bottom: 8rem;
+    grid-column: initial;
+  }
+  main .contactMe section:last-of-type {
+    display: flex;
+    flex-direction: column;
+  }
+  main .contactMe section:last-of-type div {
+    margin: 0 0 1.5rem 0;
+    display: flex;
+    align-items: center;
+  }
+  main .contactMe section:last-of-type div img {
+    margin: 0 2rem 0 0;
+  }
+}
+@media screen and (min-width: 600px) {
+  footer {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 3rem 2rem;
+  }
+  footer div {
+    margin: 0;
+  }
+}
+@media screen and (min-width: 950px) {
+  footer {
+    margin: 0 5rem 2rem;
+  }
+}

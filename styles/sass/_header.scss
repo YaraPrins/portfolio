@@ -1,0 +1,198 @@
+header {
+    width: calc(100vw - 6rem);
+    margin: 0 3rem;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+
+    /* ======================================= */
+    /*  Logo YP | Link to home | SVG of logo   */
+    /* ======================================= */
+
+    & + a, svg {
+        z-index: 2;
+        position: relative;
+        margin: 1.3rem 0;
+    }
+    
+    #Group_13 {
+        path:first-child {
+            fill: var(--bgrLight) ;
+        }
+
+        text {
+            fill: var(--bgrDark);
+        }
+    }
+
+    /* =============== */
+    /*  Hamburger SVG  */
+    /* =============== */
+
+    #menu {
+        position: absolute;
+        top: 2rem;
+        right: 0rem;
+        z-index: 2;
+        height: 1.6rem;
+        background-color: transparent;
+        cursor: pointer;
+        border: none;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+
+        > div:nth-of-type(1),
+        > div:nth-of-type(2),
+        > div:nth-of-type(3) {
+            display: block;
+            width: 2rem;
+            height: 0.25rem;
+            border-radius: 15em;
+            background-color: var(--bgrLight);
+        }
+
+        &:hover {
+            > div:nth-of-type(1),
+            > div:nth-of-type(2),
+            > div:nth-of-type(3) {
+                background-color: var(--menuHvrLight);
+            }
+            
+        }
+
+        #menuBarTop {
+            transform: rotate(45deg);
+            transform-origin: left;
+            transition: all 200ms ease;
+        }
+    
+        #menuBarMiddle {
+            display: none;
+            transition: all 200ms ease;
+        }
+    
+        #menuBarBottom {
+            transform: rotate(-45deg);
+            transform-origin: left;
+            transition: all 200ms ease;
+        }
+
+        &.menuActive {
+            #menuBarTop,
+            #menuBarMiddle,
+            #menuBarBottom {
+                transition: all 200ms ease;
+                transform: none;
+                display: block;
+            }
+        }
+    }
+
+
+    /* ======================== */
+    /*  Mobile menu list items  */
+    /* ======================== */
+
+    #listItems {
+        display: block;
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        display: flex;
+        z-index: 1;
+        background-color: var(--bgrDark);
+
+        &.menuClosed {
+            display: none;
+        }
+    
+        ul {
+            margin: 2rem;
+            list-style: none;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        
+            li {
+                padding: 1rem 0;
+    
+                a {
+                    text-decoration: none;
+                    font-size: 2rem;
+
+                    &:hover,
+                    &:active,
+                    &:focus {
+                        color: var(--txtHvrLight);
+                    }
+
+                    &focus {
+                        text-decoration: underline;
+                        outline-style: none;
+                    }
+                }
+            }
+          }
+    }
+
+    #colorMode {
+        display: flex;
+        position: fixed;
+        z-index: 999;
+        justify-content: center;
+        width: 100vw;
+        
+        div {
+            display: flex;
+            position: fixed;
+            bottom: 5rem;
+            z-index: 999;
+            justify-content: center;
+            align-items: center;
+            
+            svg {
+                cursor: pointer;
+            }
+
+            svg:nth-of-type(1) {
+                position: relative;
+            }
+
+            #Group_134 {
+                position: absolute;
+                transition: all 700ms ease;
+            }
+
+            .lightOff {
+                transition: all 700ms ease;
+                opacity: 0;
+            }
+            
+            .darkMode {
+                transition: all 700ms ease;
+                position: absolute;
+                left: 3.5rem;
+                transform: rotate(360deg);
+            }
+
+            .lightMode {
+                transition: all 700ms ease;
+                position: absolute;
+                left: 0.5rem;
+            }
+        }
+    }
+
+    #colorMode.menuClosed {
+        display: none;
+    }
+}

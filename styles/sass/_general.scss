@@ -1,0 +1,60 @@
+    /* ================= */
+    /*  General Styling  */
+    /* ================= */
+    html {
+        scroll-behavior: smooth;
+        scroll-padding-top: 9rem;
+    }
+
+
+    body {
+        --fntHeadings: "consolas", arial, sans-serif;
+        background-color: var(--bgrDark);
+        overflow-x: hidden;
+    }
+    
+    /*  custom scrollbar  */
+    ::-webkit-scrollbar {
+        width: 0.2rem;
+        background: transparent;
+        
+    
+        &-track {
+            background: none;
+        }
+    
+        &-thumb {
+            background: var(--bgrLight);
+            border-radius: 100vw;
+    
+            &:hover {
+                background: var(--txtHvrLight);
+            }
+        }
+    }
+    
+    h1, h2, h3, h4, h5, h6, p, a, button {
+        color: var(--txtLight);
+        font-family: var(--fntHeadings);
+    }
+    
+    h1, h2, h3, h4, h5, h6, a,button {
+        font-weight: 800;
+    }
+    
+    div.heading2 {
+        order: 1;
+        display: flex;
+        align-items: center;
+        margin-bottom: 1.2rem;
+    
+        img {
+            order: initial;
+            max-width: 2rem;
+            margin: 0 1rem 0 0;
+        }
+    
+        h2 {
+            font-size: 2rem;
+        }
+    }
