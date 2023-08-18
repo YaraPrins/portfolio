@@ -1,0 +1,17 @@
+<svg id="Group_13" data-name="Group 13" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="57.968" height="71.707" viewBox="0 0 57.968 71.707">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_48" data-name="Rectangle 48" width="57.968" height="71.707" fill="rgba(0,0,0,0)"/>
+    </clipPath>
+  </defs>
+  <g id="Group_12" data-name="Group 12">
+    <g id="Group_11" data-name="Group 11" clip-path="url(#clip-path)">
+      <path id="Path_43" data-name="Path 43" d="M52.825,3.81c-.122-.006-.246-.01-.369-.01H10.642c-.123,0-.247,0-.369.01A7.136,7.136,0,0,1,3.8,10.724V57.552a6.659,6.659,0,0,0,6.843,6.455H16.09c1.346,4.611,7.751,8.106,15.456,8.106S45.656,68.618,47,64.007h5.455A6.659,6.659,0,0,0,59.3,57.552V10.724A7.137,7.137,0,0,1,52.825,3.81Z" transform="translate(-2.565 -2.619)" fill="#c4a9a9"/>
+      <path id="Path_44" data-name="Path 44" d="M56.822,16.146H21.671a7.245,7.245,0,0,1-6.471,7.1V65.876a3.744,3.744,0,0,0,3.808,3.682H59.492A3.744,3.744,0,0,0,63.3,65.876V23.25a7.245,7.245,0,0,1-6.476-7.1" transform="translate(-10.263 -11.129)" fill="none"/>
+      <path id="Path_45" data-name="Path 45" d="M56.822,16.146H21.671a7.245,7.245,0,0,1-6.471,7.1V65.876a3.744,3.744,0,0,0,3.808,3.682h8.227a8.647,8.647,0,0,1,2.919-4.975,13.765,13.765,0,0,1,9.074-3.029c2.344,0,6.063.51,8.5,2.481a8.023,8.023,0,0,1,3.729,5.522h8.033A3.744,3.744,0,0,0,63.3,65.876V23.25a7.245,7.245,0,0,1-6.479-7.1Z" transform="translate(-10.263 -11.129)" fill="none" stroke="#992d2f" stroke-miterlimit="10" stroke-width="1"/>
+      <path id="Path_46" data-name="Path 46" d="M76.441,170.893c0,4.782-5.418,8.658-12.1,8.658s-12.1-3.876-12.1-8.658,5.418-8.658,12.1-8.658,12.1,3.876,12.1,8.658" transform="translate(-35.279 -111.828)" fill="none"/>
+      <path id="Path_59" data-name="Path 59" d="M12.1,0c6.684,0,12.1,3.712,12.1,8.293,0,2.414-1.5,4.586-4.157,6.255A15.328,15.328,0,0,1,12.1,16.586C5.418,16.586,0,12.873,0,8.293S5.418,0,12.1,0Z" transform="translate(16.958 50.407)" fill="none" stroke="#992d2f" stroke-width="1"/>
+    </g>
+  </g>
+  <text id="YP" transform="translate(13.484 42.623)" fill="#240808" font-size="30" font-family="Consolas-Bold, Consolas" font-weight="700" letter-spacing="-0.05em"><tspan x="0" y="0">YP</tspan></text>
+</svg>
