@@ -1,0 +1,319 @@
+main {
+    margin: 0 3rem;
+
+    /* ======================================= */
+    /*  Intro Text | CTAs | My work | Contact  */
+    /* ======================================= */
+
+    .introText {
+        display: flex;
+        flex-direction: column;
+        margin: 13rem 0rem 3rem;
+        flex-wrap: wrap;
+        gap: 2.5rem;
+
+        h1 {
+            order: 2;
+            font-size: 1.6rem;
+
+            span {
+                display: block;
+            }
+        }
+
+        p {
+            order: 3;
+        }
+
+        img {
+            order: 1;
+            transform: rotate(20deg);
+            max-width: 8rem;
+
+            position: absolute;
+            top: 6rem;
+            right: -2.5rem;
+            z-index: 0;
+        }
+
+    /* ============================================ */
+    /*  See my work & Contact me | Call-to-Actions  */
+    /* ============================================ */
+
+        .ctaIntro {
+            order: 4;
+            display: flex;
+            align-self: center;
+
+            a, p {
+                order: initial;
+                padding: 0.3rem 0.5rem;
+            }
+            
+            a {
+                text-transform: uppercase;
+                text-decoration: none;
+            }
+
+            a:nth-of-type(1) {
+                text-decoration: underline var(--txtUnderline);
+                text-underline-offset: 0.3em;
+
+                &:hover {
+                    color: var(--txtHvrLight);
+                    text-decoration-color: var(--txtHvrLight);
+                }
+            }
+
+            a:nth-of-type(2) {
+                margin-left: 0.5rem;
+                border: 1px solid var(--txtUnderline);
+
+                &:hover {
+                    color: var(--txtDark);
+                    background-color: var(--txtUnderline);
+                }
+            }
+        }
+    }
+
+    .divImgYara {
+        display: none;
+    }
+
+    .scrollForMore {
+        margin: 3rem 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.6rem;
+    }
+
+    .aboutMe {
+
+
+        section:nth-of-type(1) {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 5rem;
+
+            div {
+                order: 1;
+
+                img {
+                    order: initial;
+                    margin: 0 1rem 0 0;
+                }
+            }
+
+            p:nth-of-type(1) {
+                order: 2;
+            }
+
+            p:nth-of-type(2) {
+                order: 4;
+            }
+
+            img {
+                order: 3;
+                align-self: center;
+                margin: 1.5rem 0;
+            }
+        }
+
+        section:nth-of-type(2) {
+            margin-bottom: 5rem;
+
+            h3 {
+                margin-bottom: 2rem;
+            }
+
+            .gridPrograms {
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                justify-items: center;
+                gap: 2.5rem 1.8rem;
+
+                div {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    align-items: center;
+                    height: 5.3rem;
+                    width: 2rem;
+                }
+
+                svg path {
+                    fill: var(--bgrLight);
+                }
+                
+            }
+        }
+
+        section:nth-of-type(3) {
+            margin-bottom: 5rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1.4rem;
+
+            h3 {
+                margin-bottom: 2rem;
+            }
+
+            img {
+                width: 100%;
+                height: 12rem;
+                object-fit: cover;
+                object-position: center;
+            }
+
+            img:nth-of-type(1) {
+                object-position: 0 55%;
+            }
+
+            img:nth-of-type(2) {
+                object-position: 50%;
+            }
+        }
+
+        section:nth-of-type(4) {
+            display: none;
+        }
+    }
+
+    .myWork {
+        margin-bottom: 5rem;
+
+        section:first-of-type {
+            margin-bottom: 2.5rem;
+        }
+
+        .projectImg {
+            width: 100%;
+            height: 10rem;
+            margin: 1rem 0;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+                a {
+                    background-image: url('/assets/img/mockups/FED-MockUp2.png');
+                    background-blend-mode: overlay;
+                    background-color: rgba(0, 0, 0, 0.6);
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size:cover;
+                    width: 100%;
+                    height: 100%;
+
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    font-size: 1.5rem;
+                    text-decoration: none;
+
+                    h4 {
+                        color: var(--txtOverlay);
+                        max-width: 12.2rem;
+                        text-align: center;
+                    }
+
+                    &:hover, &:active {
+                        background-size: 105%;
+                        background-color: rgba(0, 0, 0, 0.8);
+                    }
+
+                    &:hover h4, &:active h4 {
+                        color: var(--txtHvrLight);
+                    }
+
+                }
+
+                &:nth-of-type(3) a {
+                    background-image: url('/assets/img/mockups/ProjectTech_MockUp1.png');
+                }
+                &:nth-of-type(4) a {
+                    background-image: url('/assets/img/mockups/PTH-MockUp.png');
+                }
+                &:nth-of-type(5) a {
+                    background-image: url('/assets/img/mockups/portfolioMockUp.png');
+                }
+                &:nth-of-type(6) a {
+                    background-image: url('/assets/img/mockups/Cubefields-MockUp2.png');
+                }
+                &:nth-of-type(7) a {
+                    background-image: url('/assets/img/mockups/ProjectTeam2-MockUp2.png');
+                }
+                &:nth-of-type(8) a {
+                    background-image: url('/assets/img/mockups/VID-MockUp2.png');
+                }
+                &:nth-of-type(9) a {
+                    background-image: url('/assets/img/mockups/IP-MockUp.png');
+                }
+                &:nth-of-type(10) a {
+                    background-image: url('/assets/img/mockups/vormgeving2_mockup2.png');
+                }
+                &:nth-of-type(11) a {
+                    background-image: url('/assets/img/mockups/projectRMDD-mockup1.png');
+                }
+                &:nth-of-type(12) a {
+                    background-image: url('/assets/img/mockups/vormgeving2_mockup3.png');
+                }
+                &:nth-of-type(13) a {
+                    background-image: url('/assets/img/mockups/otherMockUp.png');
+                }
+
+
+                &.seeLessProjects {
+                    display: none;
+                }
+            }
+
+        section:last-of-type {
+            display: flex;
+            justify-content: center;
+
+            button {
+                margin-top: 2rem;
+                cursor: pointer;
+                border: none;
+                background: none;
+
+                text-transform: uppercase;
+                text-decoration: underline var(--txtUnderline);
+                text-underline-offset: 0.3em;
+
+                &:hover {
+                    color: var(--txtHvrLight);
+                    text-decoration-color: var(--txtHvrLight);
+                }
+            }
+        }
+    }
+
+    .contactMe {
+        margin-bottom: 5rem;
+
+        section:nth-of-type(1) {
+            margin: 0 0 2.5rem 0;
+        }
+
+        section:last-of-type {
+            display: flex;
+            flex-direction: column;
+
+            div {
+                margin: 0 0 1.5rem 0;
+                display: flex;
+                align-items: center;
+
+                img {
+                    margin: 0 2rem 0 0;
+                }
+            }
+        }
+    }
+}

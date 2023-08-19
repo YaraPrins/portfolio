@@ -1,0 +1,45 @@
+body {
+    --bgrDark: #240808;
+    --bgrLight: #C4A9A9;
+
+    --txtDark: #240808;
+    --txtLight: #C4A9A9;
+    --txtOverlay: #C4A9A9;
+
+    --txtHvrLight: #C25353;
+    --txtUnderline: #C25353;
+
+    --menuHvrLight: #796969;
+    --menuHvrDark: #282323;
+
+    &.modeLight {
+        --bgrDark: #C4A9A9;
+        --bgrLight: #240808;
+        
+        --txtDark: #C4A9A9;
+        --txtLight: #240808;
+        
+        --txtHvrLight: #C25353;
+        --txtUnderline: #C25353;
+        
+        --menuHvrLight: #796969;
+        --menuHvrDark: #282323;
+    }
+}
+
+@media (prefers-color-scheme: light) {
+    body {
+        --bgrDark: #C4A9A9;
+        --bgrLight: #240808;
+        
+        --txtDark: #C4A9A9;
+        --txtLight: #240808;
+        
+        --txtHvrLight: #C25353;
+        --txtUnderline: #C25353;
+        
+        --menuHvrLight: #796969;
+        --menuHvrDark: #282323;
+    }
+}
+

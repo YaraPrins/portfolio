@@ -1,0 +1,108 @@
+@media screen and (min-width: 950px) {
+
+    header {
+        width: 100vw;
+        display: grid;
+        grid-template-columns: 3fr 1fr 1fr;
+        align-items: center;
+
+        margin: 1rem 0;
+        padding: 0 5rem;
+    
+        & + a, svg {
+            margin: 1.3rem 0rem;
+            order: 1;
+        }
+        
+    
+        #menu {
+            display: none;
+        }
+    
+    
+        /* ======================== */
+        /*  Mobile menu list items  */
+        /* ======================== */
+    
+        #listItems {
+            display: initial;
+            position: initial;
+            width: initial;
+            margin-right: 5rem;
+
+            order: 3;
+            bottom: initial;
+            left: initial;
+            background: none;
+            z-index: initial;
+    
+            &.menuClosed {
+                display: initial;
+            }
+        
+            ul {
+                flex-direction: row;
+                gap: 2rem;
+                justify-content: flex-end;
+                margin-right: 5rem;
+            
+                li {
+                    padding: 1rem 0;
+                    position: relative;
+        
+                    a {
+                        font-size: 1.2rem;
+
+                        &::after {
+                            content: "";
+                            position: absolute;
+                            background-color: var(--txtHvrLight);
+                            height: 0.14rem;
+                            width: 100%;
+                            border-radius: 1rem;
+                            bottom: 0.6rem;
+                            left: 0;
+                            transition: all 200ms ease;
+                            transform: scale(0,1);
+                            
+                        }
+
+                        &:hover::after {
+                            transform: scale(1,1);
+                            transform-origin: center;
+                        }
+
+                    }
+                }
+              }
+        }
+    
+        #colorMode {
+            order: 3;
+            margin-left: 2rem;
+            position: initial;
+            width: initial;
+            
+            div {
+                display: flex;
+                position: fixed;
+                bottom: initial;
+
+
+                .lightOff {
+                    position: initial;
+                }
+            }
+        }
+    
+        #colorMode.menuClosed {
+            display: flex;
+            align-items: center;
+            justify-content: right;
+        }
+    }
+
+    
+
+
+}

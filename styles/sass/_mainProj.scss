@@ -1,0 +1,221 @@
+/* ======= */
+/* General */
+/* ======= */
+
+body {
+
+    main {
+        margin: 7rem 3rem 3rem;
+
+        a.goBack {
+            text-transform: uppercase;
+            text-decoration: underline var(--txtUnderline);
+            text-underline-offset: 0.3em;
+
+            &::before {
+                content: url(/assets/img/goBack.svg);
+                padding-right: 0.5rem;
+                position: relative;
+                top: 0.2rem;
+            }
+
+            &:hover {
+                color: var(--txtHvrLight);
+                text-decoration-color: var(--txtHvrLight);
+            }
+        }
+
+        section {
+            margin-bottom: 5rem;
+
+            div {
+                margin-top: 2rem;
+            }
+
+            img {
+                width: 100%;
+                margin: 1.5rem 0;
+            }
+
+            p {
+                margin-bottom: 1rem;
+            }
+
+            p.firstP {
+                margin-bottom: 1.5rem;
+                font-size: 1.1rem;
+                font-weight: bold;
+            }
+
+            div {
+
+                h1 {
+                    font-size: 1.8rem;
+                }
+
+                img {
+                    margin-bottom: 0.2rem;
+                }
+
+                figcaption {
+                    color: var(--txtLight);
+                    font-family: "consolas", arial, sans-serif;
+                    font-weight: 100;
+                    font-size: 0.8rem;
+                    text-align: center;
+                }
+            }
+
+            div:nth-of-type(3) {
+                figcaption {
+                    margin-bottom: 2rem;
+                }
+            }
+        }
+
+        section:nth-of-type(2) {
+            p {
+                font-weight: normal;
+                font-size: 1rem;
+            }
+            p:first-of-type {
+                margin-top: 1rem;
+            }
+        }
+
+        section:nth-of-type(2) {
+            img.breakdownSketch {
+                display: none;
+            }
+        }
+    }
+
+}
+
+/* ================ */
+/* FED | D&D Beyond */
+/* ================ */
+
+body.dndbeyond {
+
+    main {
+        
+        section:nth-of-type(2),
+        section:nth-of-type(3),
+        section:nth-of-type(4) {
+            h2 {
+                margin-bottom: 1.1rem;
+            }
+
+            h3 {
+                margin-bottom: 0.5rem;
+            }
+
+            p {
+                font-weight: normal;
+                font-size: 1rem;
+            }
+
+            img {
+                margin: 0.5rem 0;
+            }
+
+            img.breakdownSketch {
+                display: none;
+            }
+        }
+    }
+}
+
+
+
+/* ================== */
+/* Proj Tech | Musicr */
+/* ================== */
+
+body.musicr {
+
+    main {
+        
+        section:nth-of-type(2),
+        section:nth-of-type(3),
+        section:nth-of-type(4) {
+
+            div.breakdownSketch {
+                display: none;
+            }
+        }
+    }
+}
+
+
+
+/* ================ */
+/* Part-Time Heroes */
+/* ================ */
+
+
+/* ============= */
+/* Portfolio Old */
+/* ============= */
+
+
+
+/* ========== */
+/* Cubefields */
+/* ========== */
+
+
+
+/* =================================== */
+/* Proj Team 2 | A Song From Me To You */
+/* =================================== */
+
+
+
+/* ================== */
+/* VID | Boekenzoeker */
+/* ================== */
+
+
+
+
+/* ==================================== */
+/* Vormgeving 2 | Designing Lyric Video */
+/* ==================================== */
+
+body.lyricvideo {
+    main {
+        section:nth-of-type(3) {
+            video {
+                margin-top: 1rem;
+            }
+        }
+    }
+}
+
+/* =========== */
+/* Other Works */
+/* =========== */
+
+body.otherworks {
+    main {
+        section:nth-of-type(2) {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2rem;
+            div {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 1rem 2rem;
+
+                h2 {
+                    grid-column: span 2;
+                }
+                img {
+                    align-self: center;
+                }
+            }
+        }
+    }
+}
