@@ -306,6 +306,7 @@ main .introText img {
   transform: rotate(20deg);
   max-width: 8rem;
   position: absolute;
+  overflow: hidden;
   top: 6rem;
   right: -2.5rem;
   z-index: 0;
