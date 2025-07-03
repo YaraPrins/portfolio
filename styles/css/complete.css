@@ -382,9 +382,10 @@ main .aboutMe section:nth-of-type(2) h3 {
 }
 main .aboutMe section:nth-of-type(2) .gridPrograms {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  max-width: 50rem;
   justify-items: center;
-  gap: 2.5rem 1.8rem;
+  gap: 3.5rem 1.8rem;
 }
 main .aboutMe section:nth-of-type(2) .gridPrograms div {
   display: flex;
@@ -392,8 +393,19 @@ main .aboutMe section:nth-of-type(2) .gridPrograms div {
   justify-content: space-between;
   align-items: center;
   height: 5.3rem;
-  width: 2rem;
+  /* width: rem; */
+  gap: 0.5rem 0;
 }
+
+main .aboutMe section:nth-of-type(2) .gridPrograms svg {
+  width: 100%;
+  max-width: 5rem;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 main .aboutMe section:nth-of-type(2) .gridPrograms svg path {
   fill: var(--bgrLight);
 }
@@ -555,16 +567,20 @@ footer div a {
   header {
     width: 100vw;
     display: grid;
-    grid-template-columns: 3fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
     margin: 1rem 0;
     padding: 0 5rem;
+    background-color: var(--bgrDark);
+    border-radius: 4rem;
+
+
     /* ======================== */
     /*  Mobile menu list items  */
     /* ======================== */
   }
   header + a, header svg {
-    margin: 1.3rem 0rem;
+    margin: 1rem 0rem;
     /* order: 1; */
   }
   header #menu {
@@ -790,7 +806,7 @@ footer div a {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: fit-content 1fr;
-    margin: 4rem 0 3rem;
+    margin: 10rem 0 3rem;
   }
   main .aboutMe section:nth-of-type(3) h3 {
     margin-bottom: 0;
