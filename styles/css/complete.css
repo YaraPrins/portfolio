@@ -231,16 +231,17 @@ header #listItems ul li a {
 header #listItems ul li a:hover, header #listItems ul li a:active, header #listItems ul li a:focus {
   color: var(--txtHvrLight);
 }
-header #listItems ul li afocus {
+header #listItems ul li a:focus {
   text-decoration: underline;
   outline-style: none;
 }
 header #colorMode {
   display: flex;
-  position: fixed;
+  position: relative;
+  right: 1.6rem;
   z-index: 999;
   justify-content: center;
-  width: 100vw;
+  width: 100%;
 }
 
 header #colorMode div {
