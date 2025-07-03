@@ -580,7 +580,7 @@ footer div a {
     /* ======================== */
   }
   header + a, header svg {
-    margin: 1rem 0rem;
+    margin: 1.3rem 0rem;
     /* order: 1; */
   }
   header #menu {
